@@ -1,0 +1,28 @@
+name: .NET Build CI
+
+# Este workflow se ejecutará cuando hagan push a main 
+# o cuando abran un Pull Request hacia main.
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Descargar el código
+      uses: actions/checkout@v4
+
+    - name: Configurar .NET 8.0.130
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.130' # Versión exacta que estás utilizando
+
+    - name: Restaurar dependencias
+      run: dotnet restore SistemaMatricula/SistemaMatricula.csproj
+
+    - name: Compilar el proyecto
+      run: dotnet build SistemaMatricula/SistemaMatricula.csproj --no-restore --configuration Release
