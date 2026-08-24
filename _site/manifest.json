@@ -1,0 +1,200 @@
+{
+  "source_base_path": "/home/jalem/Descargas/TEC/Algortimos y Estructuras de Datos/ll S/SistemaMatricula",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaMatricula.Curso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaMatricula.Curso.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaMatricula.Curso",
+      "Summary": "<p sourcefile=\"api/SistemaMatricula.Curso.yml\" sourcestartlinenumber=\"1\">Representa la materia académica.\nUne diferentes clases (Profesor y Horario) dentro de una sola estructura.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaMatricula.Estudiante.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaMatricula.Estudiante.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaMatricula.Estudiante",
+      "Summary": "<p sourcefile=\"api/SistemaMatricula.Estudiante.yml\" sourcestartlinenumber=\"1\">Representa a un estudiante regular de la universidad.\nDemuestra el concepto de Herencia, ya que obtiene automáticamente el Nombre,\nIdentificación y Edad de la clase base Persona.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaMatricula.EstudianteBecado.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaMatricula.EstudianteBecado.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaMatricula.EstudianteBecado",
+      "Summary": "<p sourcefile=\"api/SistemaMatricula.EstudianteBecado.yml\" sourcestartlinenumber=\"1\">Representa a un estudiante que cuenta con un porcentaje de descuento en su matrícula.</p>\n<p sourcefile=\"api/SistemaMatricula.EstudianteBecado.yml\" sourcestartlinenumber=\"3\">CONCEPTOS APLICADOS:</p>\n<ol sourcefile=\"api/SistemaMatricula.EstudianteBecado.yml\" sourcestartlinenumber=\"4\">\n<li sourcefile=\"api/SistemaMatricula.EstudianteBecado.yml\" sourcestartlinenumber=\"4\">Herencia Nivel 3: Esta clase hereda de Estudiante, la cual a su vez hereda de Persona\n(Persona -&gt; Estudiante -&gt; EstudianteBecado).</li>\n<li sourcefile=\"api/SistemaMatricula.EstudianteBecado.yml\" sourcestartlinenumber=\"6\">Polimorfismo: Modifica la forma en la que se calcula el pago de la matrícula,\naplicando un descuento específico que un estudiante regular no tiene.</li>\n</ol>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaMatricula.Horario.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaMatricula.Horario.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaMatricula.Horario",
+      "Summary": "<p sourcefile=\"api/SistemaMatricula.Horario.yml\" sourcestartlinenumber=\"1\">Representa el bloque de tiempo y espacio donde se imparte una clase.\nEs perfecta para explicar los Tipos de Datos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaMatricula.Matricula.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaMatricula.Matricula.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaMatricula.Matricula",
+      "Summary": "<p sourcefile=\"api/SistemaMatricula.Matricula.yml\" sourcestartlinenumber=\"1\">Gestiona el proceso de inscripción de los estudiantes a los cursos.\nEs la clase ideal para explicar el concepto de ENCAPSULAMIENTO.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaMatricula.Persona.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaMatricula.Persona.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaMatricula.Persona",
+      "Summary": "<p sourcefile=\"api/SistemaMatricula.Persona.yml\" sourcestartlinenumber=\"1\">Abstracción y Clase.\nEs el &quot;molde genérico&quot; para cualquier individuo en la universidad.\nAl ser 'abstract', el sistema no permite crear objetos directos de ella\n(nadie es &quot;solo una persona&quot; en el sistema, debe tener un rol).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaMatricula.Profesor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaMatricula.Profesor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaMatricula.Profesor",
+      "Summary": "<p sourcefile=\"api/SistemaMatricula.Profesor.yml\" sourcestartlinenumber=\"1\">Representa a un docente dentro de la universidad.\nEsta clase hereda de Persona, demostrando cómo reutilizar el código base\npara crear un rol completamente distinto al del estudiante.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SistemaMatricula.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SistemaMatricula.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SistemaMatricula",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "docs/toc.json"
+        },
+        ".html": {
+          "relative_path": "docs/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

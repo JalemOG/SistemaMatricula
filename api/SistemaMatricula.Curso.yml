@@ -1,0 +1,619 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaMatricula.Curso
+  commentId: T:SistemaMatricula.Curso
+  id: Curso
+  parent: SistemaMatricula
+  children:
+  - SistemaMatricula.Curso.#ctor(System.String,System.Int32,System.Int32,SistemaMatricula.Profesor,SistemaMatricula.Horario)
+  - SistemaMatricula.Curso.Creditos
+  - SistemaMatricula.Curso.CupoMaximo
+  - SistemaMatricula.Curso.HayCupo(System.Int32)
+  - SistemaMatricula.Curso.HorarioCurso
+  - SistemaMatricula.Curso.NombreCurso
+  - SistemaMatricula.Curso.ProfesorAsignado
+  langs:
+  - csharp
+  - vb
+  name: Curso
+  nameWithType: Curso
+  fullName: SistemaMatricula.Curso
+  type: Class
+  source:
+    remote:
+      path: src/Curso.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: Curso
+    path: src/Curso.cs
+    startLine: 8
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    Representa la materia académica. 
+
+    Une diferentes clases (Profesor y Horario) dentro de una sola estructura.
+  example: []
+  syntax:
+    content: public class Curso
+    content.vb: Public Class Curso
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SistemaMatricula.Curso.NombreCurso
+  commentId: P:SistemaMatricula.Curso.NombreCurso
+  id: NombreCurso
+  parent: SistemaMatricula.Curso
+  langs:
+  - csharp
+  - vb
+  name: NombreCurso
+  nameWithType: Curso.NombreCurso
+  fullName: SistemaMatricula.Curso.NombreCurso
+  type: Property
+  source:
+    remote:
+      path: src/Curso.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: NombreCurso
+    path: src/Curso.cs
+    startLine: 10
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  syntax:
+    content: public string NombreCurso { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NombreCurso As String
+  overload: SistemaMatricula.Curso.NombreCurso*
+- uid: SistemaMatricula.Curso.Creditos
+  commentId: P:SistemaMatricula.Curso.Creditos
+  id: Creditos
+  parent: SistemaMatricula.Curso
+  langs:
+  - csharp
+  - vb
+  name: Creditos
+  nameWithType: Curso.Creditos
+  fullName: SistemaMatricula.Curso.Creditos
+  type: Property
+  source:
+    remote:
+      path: src/Curso.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: Creditos
+    path: src/Curso.cs
+    startLine: 11
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  syntax:
+    content: public int Creditos { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Creditos As Integer
+  overload: SistemaMatricula.Curso.Creditos*
+- uid: SistemaMatricula.Curso.CupoMaximo
+  commentId: P:SistemaMatricula.Curso.CupoMaximo
+  id: CupoMaximo
+  parent: SistemaMatricula.Curso
+  langs:
+  - csharp
+  - vb
+  name: CupoMaximo
+  nameWithType: Curso.CupoMaximo
+  fullName: SistemaMatricula.Curso.CupoMaximo
+  type: Property
+  source:
+    remote:
+      path: src/Curso.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: CupoMaximo
+    path: src/Curso.cs
+    startLine: 12
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  syntax:
+    content: public int CupoMaximo { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CupoMaximo As Integer
+  overload: SistemaMatricula.Curso.CupoMaximo*
+- uid: SistemaMatricula.Curso.ProfesorAsignado
+  commentId: P:SistemaMatricula.Curso.ProfesorAsignado
+  id: ProfesorAsignado
+  parent: SistemaMatricula.Curso
+  langs:
+  - csharp
+  - vb
+  name: ProfesorAsignado
+  nameWithType: Curso.ProfesorAsignado
+  fullName: SistemaMatricula.Curso.ProfesorAsignado
+  type: Property
+  source:
+    remote:
+      path: src/Curso.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: ProfesorAsignado
+    path: src/Curso.cs
+    startLine: 18
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    El docente asignado al curso.
+
+    Demuestra cómo un Objeto puede estar compuesto por otros Objetos.
+  example: []
+  syntax:
+    content: public Profesor ProfesorAsignado { get; set; }
+    parameters: []
+    return:
+      type: SistemaMatricula.Profesor
+    content.vb: Public Property ProfesorAsignado As Profesor
+  overload: SistemaMatricula.Curso.ProfesorAsignado*
+- uid: SistemaMatricula.Curso.HorarioCurso
+  commentId: P:SistemaMatricula.Curso.HorarioCurso
+  id: HorarioCurso
+  parent: SistemaMatricula.Curso
+  langs:
+  - csharp
+  - vb
+  name: HorarioCurso
+  nameWithType: Curso.HorarioCurso
+  fullName: SistemaMatricula.Curso.HorarioCurso
+  type: Property
+  source:
+    remote:
+      path: src/Curso.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: HorarioCurso
+    path: src/Curso.cs
+    startLine: 23
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: El bloque de tiempo del curso.
+  example: []
+  syntax:
+    content: public Horario HorarioCurso { get; set; }
+    parameters: []
+    return:
+      type: SistemaMatricula.Horario
+    content.vb: Public Property HorarioCurso As Horario
+  overload: SistemaMatricula.Curso.HorarioCurso*
+- uid: SistemaMatricula.Curso.#ctor(System.String,System.Int32,System.Int32,SistemaMatricula.Profesor,SistemaMatricula.Horario)
+  commentId: M:SistemaMatricula.Curso.#ctor(System.String,System.Int32,System.Int32,SistemaMatricula.Profesor,SistemaMatricula.Horario)
+  id: '#ctor(System.String,System.Int32,System.Int32,SistemaMatricula.Profesor,SistemaMatricula.Horario)'
+  parent: SistemaMatricula.Curso
+  langs:
+  - csharp
+  - vb
+  name: Curso(string, int, int, Profesor, Horario)
+  nameWithType: Curso.Curso(string, int, int, Profesor, Horario)
+  fullName: SistemaMatricula.Curso.Curso(string, int, int, SistemaMatricula.Profesor, SistemaMatricula.Horario)
+  type: Constructor
+  source:
+    remote:
+      path: src/Curso.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: .ctor
+    path: src/Curso.cs
+    startLine: 25
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  syntax:
+    content: public Curso(string nombreCurso, int creditos, int cupoMaximo, Profesor profesorAsignado, Horario horarioCurso)
+    parameters:
+    - id: nombreCurso
+      type: System.String
+    - id: creditos
+      type: System.Int32
+    - id: cupoMaximo
+      type: System.Int32
+    - id: profesorAsignado
+      type: SistemaMatricula.Profesor
+    - id: horarioCurso
+      type: SistemaMatricula.Horario
+    content.vb: Public Sub New(nombreCurso As String, creditos As Integer, cupoMaximo As Integer, profesorAsignado As Profesor, horarioCurso As Horario)
+  overload: SistemaMatricula.Curso.#ctor*
+  nameWithType.vb: Curso.New(String, Integer, Integer, Profesor, Horario)
+  fullName.vb: SistemaMatricula.Curso.New(String, Integer, Integer, SistemaMatricula.Profesor, SistemaMatricula.Horario)
+  name.vb: New(String, Integer, Integer, Profesor, Horario)
+- uid: SistemaMatricula.Curso.HayCupo(System.Int32)
+  commentId: M:SistemaMatricula.Curso.HayCupo(System.Int32)
+  id: HayCupo(System.Int32)
+  parent: SistemaMatricula.Curso
+  langs:
+  - csharp
+  - vb
+  name: HayCupo(int)
+  nameWithType: Curso.HayCupo(int)
+  fullName: SistemaMatricula.Curso.HayCupo(int)
+  type: Method
+  source:
+    remote:
+      path: src/Curso.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: HayCupo
+    path: src/Curso.cs
+    startLine: 40
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    Verifica si aún hay espacios en el curso.
+
+    CONCEPTO: Método (Una acción que el objeto puede realizar).
+  example: []
+  syntax:
+    content: public bool HayCupo(int cantidadMatriculados)
+    parameters:
+    - id: cantidadMatriculados
+      type: System.Int32
+      description: Número actual de estudiantes inscritos.
+    return:
+      type: System.Boolean
+      description: Verdadero si hay campo, Falso si está lleno.
+    content.vb: Public Function HayCupo(cantidadMatriculados As Integer) As Boolean
+  overload: SistemaMatricula.Curso.HayCupo*
+  nameWithType.vb: Curso.HayCupo(Integer)
+  fullName.vb: SistemaMatricula.Curso.HayCupo(Integer)
+  name.vb: HayCupo(Integer)
+references:
+- uid: SistemaMatricula
+  commentId: N:SistemaMatricula
+  href: SistemaMatricula.html
+  name: SistemaMatricula
+  nameWithType: SistemaMatricula
+  fullName: SistemaMatricula
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SistemaMatricula.Curso.NombreCurso*
+  commentId: Overload:SistemaMatricula.Curso.NombreCurso
+  href: SistemaMatricula.Curso.html#SistemaMatricula_Curso_NombreCurso
+  name: NombreCurso
+  nameWithType: Curso.NombreCurso
+  fullName: SistemaMatricula.Curso.NombreCurso
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SistemaMatricula.Curso.Creditos*
+  commentId: Overload:SistemaMatricula.Curso.Creditos
+  href: SistemaMatricula.Curso.html#SistemaMatricula_Curso_Creditos
+  name: Creditos
+  nameWithType: Curso.Creditos
+  fullName: SistemaMatricula.Curso.Creditos
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SistemaMatricula.Curso.CupoMaximo*
+  commentId: Overload:SistemaMatricula.Curso.CupoMaximo
+  href: SistemaMatricula.Curso.html#SistemaMatricula_Curso_CupoMaximo
+  name: CupoMaximo
+  nameWithType: Curso.CupoMaximo
+  fullName: SistemaMatricula.Curso.CupoMaximo
+- uid: SistemaMatricula.Curso.ProfesorAsignado*
+  commentId: Overload:SistemaMatricula.Curso.ProfesorAsignado
+  href: SistemaMatricula.Curso.html#SistemaMatricula_Curso_ProfesorAsignado
+  name: ProfesorAsignado
+  nameWithType: Curso.ProfesorAsignado
+  fullName: SistemaMatricula.Curso.ProfesorAsignado
+- uid: SistemaMatricula.Profesor
+  commentId: T:SistemaMatricula.Profesor
+  parent: SistemaMatricula
+  href: SistemaMatricula.Profesor.html
+  name: Profesor
+  nameWithType: Profesor
+  fullName: SistemaMatricula.Profesor
+- uid: SistemaMatricula.Curso.HorarioCurso*
+  commentId: Overload:SistemaMatricula.Curso.HorarioCurso
+  href: SistemaMatricula.Curso.html#SistemaMatricula_Curso_HorarioCurso
+  name: HorarioCurso
+  nameWithType: Curso.HorarioCurso
+  fullName: SistemaMatricula.Curso.HorarioCurso
+- uid: SistemaMatricula.Horario
+  commentId: T:SistemaMatricula.Horario
+  parent: SistemaMatricula
+  href: SistemaMatricula.Horario.html
+  name: Horario
+  nameWithType: Horario
+  fullName: SistemaMatricula.Horario
+- uid: SistemaMatricula.Curso.#ctor*
+  commentId: Overload:SistemaMatricula.Curso.#ctor
+  href: SistemaMatricula.Curso.html#SistemaMatricula_Curso__ctor_System_String_System_Int32_System_Int32_SistemaMatricula_Profesor_SistemaMatricula_Horario_
+  name: Curso
+  nameWithType: Curso.Curso
+  fullName: SistemaMatricula.Curso.Curso
+  nameWithType.vb: Curso.New
+  fullName.vb: SistemaMatricula.Curso.New
+  name.vb: New
+- uid: SistemaMatricula.Curso.HayCupo*
+  commentId: Overload:SistemaMatricula.Curso.HayCupo
+  href: SistemaMatricula.Curso.html#SistemaMatricula_Curso_HayCupo_System_Int32_
+  name: HayCupo
+  nameWithType: Curso.HayCupo
+  fullName: SistemaMatricula.Curso.HayCupo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

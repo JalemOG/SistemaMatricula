@@ -1,0 +1,28 @@
+### YamlMime:TableOfContent
+items:
+- uid: SistemaMatricula
+  name: SistemaMatricula
+  type: Namespace
+  items:
+  - uid: SistemaMatricula.Curso
+    name: Curso
+    type: Class
+  - uid: SistemaMatricula.Estudiante
+    name: Estudiante
+    type: Class
+  - uid: SistemaMatricula.EstudianteBecado
+    name: EstudianteBecado
+    type: Class
+  - uid: SistemaMatricula.Horario
+    name: Horario
+    type: Class
+  - uid: SistemaMatricula.Matricula
+    name: Matricula
+    type: Class
+  - uid: SistemaMatricula.Persona
+    name: Persona
+    type: Class
+  - uid: SistemaMatricula.Profesor
+    name: Profesor
+    type: Class
+memberLayout: SamePage

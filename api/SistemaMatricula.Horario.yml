@@ -1,0 +1,558 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaMatricula.Horario
+  commentId: T:SistemaMatricula.Horario
+  id: Horario
+  parent: SistemaMatricula
+  children:
+  - SistemaMatricula.Horario.#ctor(System.String,System.Int32,System.Int32,System.String)
+  - SistemaMatricula.Horario.Aula
+  - SistemaMatricula.Horario.DiaSemana
+  - SistemaMatricula.Horario.HoraFin
+  - SistemaMatricula.Horario.HoraInicio
+  - SistemaMatricula.Horario.ObtenerFormatoHorario
+  langs:
+  - csharp
+  - vb
+  name: Horario
+  nameWithType: Horario
+  fullName: SistemaMatricula.Horario
+  type: Class
+  source:
+    remote:
+      path: src/Horario.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: Horario
+    path: src/Horario.cs
+    startLine: 8
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    Representa el bloque de tiempo y espacio donde se imparte una clase.
+
+    Es perfecta para explicar los Tipos de Datos.
+  example: []
+  syntax:
+    content: public class Horario
+    content.vb: Public Class Horario
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SistemaMatricula.Horario.DiaSemana
+  commentId: P:SistemaMatricula.Horario.DiaSemana
+  id: DiaSemana
+  parent: SistemaMatricula.Horario
+  langs:
+  - csharp
+  - vb
+  name: DiaSemana
+  nameWithType: Horario.DiaSemana
+  fullName: SistemaMatricula.Horario.DiaSemana
+  type: Property
+  source:
+    remote:
+      path: src/Horario.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: DiaSemana
+    path: src/Horario.cs
+    startLine: 14
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    El día de la semana (ej. "Lunes"). 
+
+    Demuestra el uso del tipo de dato 'string' para cadenas de texto.
+  example: []
+  syntax:
+    content: public string DiaSemana { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DiaSemana As String
+  overload: SistemaMatricula.Horario.DiaSemana*
+- uid: SistemaMatricula.Horario.HoraInicio
+  commentId: P:SistemaMatricula.Horario.HoraInicio
+  id: HoraInicio
+  parent: SistemaMatricula.Horario
+  langs:
+  - csharp
+  - vb
+  name: HoraInicio
+  nameWithType: Horario.HoraInicio
+  fullName: SistemaMatricula.Horario.HoraInicio
+  type: Property
+  source:
+    remote:
+      path: src/Horario.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: HoraInicio
+    path: src/Horario.cs
+    startLine: 20
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    La hora de inicio (formato 24h). 
+
+    Demuestra el uso del tipo de dato 'int' para números enteros.
+  example: []
+  syntax:
+    content: public int HoraInicio { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property HoraInicio As Integer
+  overload: SistemaMatricula.Horario.HoraInicio*
+- uid: SistemaMatricula.Horario.HoraFin
+  commentId: P:SistemaMatricula.Horario.HoraFin
+  id: HoraFin
+  parent: SistemaMatricula.Horario
+  langs:
+  - csharp
+  - vb
+  name: HoraFin
+  nameWithType: Horario.HoraFin
+  fullName: SistemaMatricula.Horario.HoraFin
+  type: Property
+  source:
+    remote:
+      path: src/Horario.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: HoraFin
+    path: src/Horario.cs
+    startLine: 25
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: La hora de finalización (formato 24h).
+  example: []
+  syntax:
+    content: public int HoraFin { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property HoraFin As Integer
+  overload: SistemaMatricula.Horario.HoraFin*
+- uid: SistemaMatricula.Horario.Aula
+  commentId: P:SistemaMatricula.Horario.Aula
+  id: Aula
+  parent: SistemaMatricula.Horario
+  langs:
+  - csharp
+  - vb
+  name: Aula
+  nameWithType: Horario.Aula
+  fullName: SistemaMatricula.Horario.Aula
+  type: Property
+  source:
+    remote:
+      path: src/Horario.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: Aula
+    path: src/Horario.cs
+    startLine: 30
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: El aula física asignada.
+  example: []
+  syntax:
+    content: public string Aula { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Aula As String
+  overload: SistemaMatricula.Horario.Aula*
+- uid: SistemaMatricula.Horario.#ctor(System.String,System.Int32,System.Int32,System.String)
+  commentId: M:SistemaMatricula.Horario.#ctor(System.String,System.Int32,System.Int32,System.String)
+  id: '#ctor(System.String,System.Int32,System.Int32,System.String)'
+  parent: SistemaMatricula.Horario
+  langs:
+  - csharp
+  - vb
+  name: Horario(string, int, int, string)
+  nameWithType: Horario.Horario(string, int, int, string)
+  fullName: SistemaMatricula.Horario.Horario(string, int, int, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Horario.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: .ctor
+    path: src/Horario.cs
+    startLine: 35
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: 'Constructor: Construye el evento en el calendario.'
+  example: []
+  syntax:
+    content: public Horario(string diaSemana, int horaInicio, int horaFin, string aula)
+    parameters:
+    - id: diaSemana
+      type: System.String
+    - id: horaInicio
+      type: System.Int32
+    - id: horaFin
+      type: System.Int32
+    - id: aula
+      type: System.String
+    content.vb: Public Sub New(diaSemana As String, horaInicio As Integer, horaFin As Integer, aula As String)
+  overload: SistemaMatricula.Horario.#ctor*
+  nameWithType.vb: Horario.New(String, Integer, Integer, String)
+  fullName.vb: SistemaMatricula.Horario.New(String, Integer, Integer, String)
+  name.vb: New(String, Integer, Integer, String)
+- uid: SistemaMatricula.Horario.ObtenerFormatoHorario
+  commentId: M:SistemaMatricula.Horario.ObtenerFormatoHorario
+  id: ObtenerFormatoHorario
+  parent: SistemaMatricula.Horario
+  langs:
+  - csharp
+  - vb
+  name: ObtenerFormatoHorario()
+  nameWithType: Horario.ObtenerFormatoHorario()
+  fullName: SistemaMatricula.Horario.ObtenerFormatoHorario()
+  type: Method
+  source:
+    remote:
+      path: src/Horario.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: ObtenerFormatoHorario
+    path: src/Horario.cs
+    startLine: 48
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    Une todos los datos para devolver un texto legible.
+
+    Demuestra que las funciones también tienen Tipos de Datos (en este caso, retorna un 'string').
+  example: []
+  syntax:
+    content: public string ObtenerFormatoHorario()
+    return:
+      type: System.String
+      description: Una cadena de texto con el formato del horario.
+    content.vb: Public Function ObtenerFormatoHorario() As String
+  overload: SistemaMatricula.Horario.ObtenerFormatoHorario*
+references:
+- uid: SistemaMatricula
+  commentId: N:SistemaMatricula
+  href: SistemaMatricula.html
+  name: SistemaMatricula
+  nameWithType: SistemaMatricula
+  fullName: SistemaMatricula
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SistemaMatricula.Horario.DiaSemana*
+  commentId: Overload:SistemaMatricula.Horario.DiaSemana
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_DiaSemana
+  name: DiaSemana
+  nameWithType: Horario.DiaSemana
+  fullName: SistemaMatricula.Horario.DiaSemana
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SistemaMatricula.Horario.HoraInicio*
+  commentId: Overload:SistemaMatricula.Horario.HoraInicio
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_HoraInicio
+  name: HoraInicio
+  nameWithType: Horario.HoraInicio
+  fullName: SistemaMatricula.Horario.HoraInicio
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SistemaMatricula.Horario.HoraFin*
+  commentId: Overload:SistemaMatricula.Horario.HoraFin
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_HoraFin
+  name: HoraFin
+  nameWithType: Horario.HoraFin
+  fullName: SistemaMatricula.Horario.HoraFin
+- uid: SistemaMatricula.Horario.Aula*
+  commentId: Overload:SistemaMatricula.Horario.Aula
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_Aula
+  name: Aula
+  nameWithType: Horario.Aula
+  fullName: SistemaMatricula.Horario.Aula
+- uid: SistemaMatricula.Horario.#ctor*
+  commentId: Overload:SistemaMatricula.Horario.#ctor
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario__ctor_System_String_System_Int32_System_Int32_System_String_
+  name: Horario
+  nameWithType: Horario.Horario
+  fullName: SistemaMatricula.Horario.Horario
+  nameWithType.vb: Horario.New
+  fullName.vb: SistemaMatricula.Horario.New
+  name.vb: New
+- uid: SistemaMatricula.Horario.ObtenerFormatoHorario*
+  commentId: Overload:SistemaMatricula.Horario.ObtenerFormatoHorario
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_ObtenerFormatoHorario
+  name: ObtenerFormatoHorario
+  nameWithType: Horario.ObtenerFormatoHorario
+  fullName: SistemaMatricula.Horario.ObtenerFormatoHorario

@@ -1,6 +1,6 @@
 using System;
 
-namespace src
+namespace SistemaMatricula
 {
     /// <summary>
     /// Representa a un estudiante que cuenta con un porcentaje de descuento en su matrícula.

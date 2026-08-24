@@ -1,6 +1,6 @@
 using System;
 
-namespace src
+namespace SistemaMatricula
 {
     /// <summary>
     /// Abstracción y Clase.
