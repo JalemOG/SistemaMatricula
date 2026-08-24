@@ -1,0 +1,284 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: src
+  name: src
+  href: api/src.html
+  commentId: N:src
+  fullName: src
+  nameWithType: src
+- uid: src.Estudiante
+  name: Estudiante
+  href: api/src.Estudiante.html
+  commentId: T:src.Estudiante
+  fullName: src.Estudiante
+  nameWithType: Estudiante
+- uid: src.Estudiante.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  name: Estudiante(string, string, int, string, string)
+  href: api/src.Estudiante.html#src_Estudiante__ctor_System_String_System_String_System_Int32_System_String_System_String_
+  commentId: M:src.Estudiante.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  name.vb: New(String, String, Integer, String, String)
+  fullName: src.Estudiante.Estudiante(string, string, int, string, string)
+  fullName.vb: src.Estudiante.New(String, String, Integer, String, String)
+  nameWithType: Estudiante.Estudiante(string, string, int, string, string)
+  nameWithType.vb: Estudiante.New(String, String, Integer, String, String)
+- uid: src.Estudiante.#ctor*
+  name: Estudiante
+  href: api/src.Estudiante.html#src_Estudiante__ctor_
+  commentId: Overload:src.Estudiante.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: src.Estudiante.Estudiante
+  fullName.vb: src.Estudiante.New
+  nameWithType: Estudiante.Estudiante
+  nameWithType.vb: Estudiante.New
+- uid: src.Estudiante.CalcularPagoMatricula(System.Int32)
+  name: CalcularPagoMatricula(int)
+  href: api/src.Estudiante.html#src_Estudiante_CalcularPagoMatricula_System_Int32_
+  commentId: M:src.Estudiante.CalcularPagoMatricula(System.Int32)
+  name.vb: CalcularPagoMatricula(Integer)
+  fullName: src.Estudiante.CalcularPagoMatricula(int)
+  fullName.vb: src.Estudiante.CalcularPagoMatricula(Integer)
+  nameWithType: Estudiante.CalcularPagoMatricula(int)
+  nameWithType.vb: Estudiante.CalcularPagoMatricula(Integer)
+- uid: src.Estudiante.CalcularPagoMatricula*
+  name: CalcularPagoMatricula
+  href: api/src.Estudiante.html#src_Estudiante_CalcularPagoMatricula_
+  commentId: Overload:src.Estudiante.CalcularPagoMatricula
+  isSpec: "True"
+  fullName: src.Estudiante.CalcularPagoMatricula
+  nameWithType: Estudiante.CalcularPagoMatricula
+- uid: src.Estudiante.Carne
+  name: Carne
+  href: api/src.Estudiante.html#src_Estudiante_Carne
+  commentId: P:src.Estudiante.Carne
+  fullName: src.Estudiante.Carne
+  nameWithType: Estudiante.Carne
+- uid: src.Estudiante.Carne*
+  name: Carne
+  href: api/src.Estudiante.html#src_Estudiante_Carne_
+  commentId: Overload:src.Estudiante.Carne
+  isSpec: "True"
+  fullName: src.Estudiante.Carne
+  nameWithType: Estudiante.Carne
+- uid: src.Estudiante.Carrera
+  name: Carrera
+  href: api/src.Estudiante.html#src_Estudiante_Carrera
+  commentId: P:src.Estudiante.Carrera
+  fullName: src.Estudiante.Carrera
+  nameWithType: Estudiante.Carrera
+- uid: src.Estudiante.Carrera*
+  name: Carrera
+  href: api/src.Estudiante.html#src_Estudiante_Carrera_
+  commentId: Overload:src.Estudiante.Carrera
+  isSpec: "True"
+  fullName: src.Estudiante.Carrera
+  nameWithType: Estudiante.Carrera
+- uid: src.Estudiante.MostrarDetalles
+  name: MostrarDetalles()
+  href: api/src.Estudiante.html#src_Estudiante_MostrarDetalles
+  commentId: M:src.Estudiante.MostrarDetalles
+  fullName: src.Estudiante.MostrarDetalles()
+  nameWithType: Estudiante.MostrarDetalles()
+- uid: src.Estudiante.MostrarDetalles*
+  name: MostrarDetalles
+  href: api/src.Estudiante.html#src_Estudiante_MostrarDetalles_
+  commentId: Overload:src.Estudiante.MostrarDetalles
+  isSpec: "True"
+  fullName: src.Estudiante.MostrarDetalles
+  nameWithType: Estudiante.MostrarDetalles
+- uid: src.EstudianteBecado
+  name: EstudianteBecado
+  href: api/src.EstudianteBecado.html
+  commentId: T:src.EstudianteBecado
+  fullName: src.EstudianteBecado
+  nameWithType: EstudianteBecado
+- uid: src.EstudianteBecado.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)
+  name: EstudianteBecado(string, string, int, string, string, double)
+  href: api/src.EstudianteBecado.html#src_EstudianteBecado__ctor_System_String_System_String_System_Int32_System_String_System_String_System_Double_
+  commentId: M:src.EstudianteBecado.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)
+  name.vb: New(String, String, Integer, String, String, Double)
+  fullName: src.EstudianteBecado.EstudianteBecado(string, string, int, string, string, double)
+  fullName.vb: src.EstudianteBecado.New(String, String, Integer, String, String, Double)
+  nameWithType: EstudianteBecado.EstudianteBecado(string, string, int, string, string, double)
+  nameWithType.vb: EstudianteBecado.New(String, String, Integer, String, String, Double)
+- uid: src.EstudianteBecado.#ctor*
+  name: EstudianteBecado
+  href: api/src.EstudianteBecado.html#src_EstudianteBecado__ctor_
+  commentId: Overload:src.EstudianteBecado.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: src.EstudianteBecado.EstudianteBecado
+  fullName.vb: src.EstudianteBecado.New
+  nameWithType: EstudianteBecado.EstudianteBecado
+  nameWithType.vb: EstudianteBecado.New
+- uid: src.EstudianteBecado.CalcularPagoMatricula(System.Int32)
+  name: CalcularPagoMatricula(int)
+  href: api/src.EstudianteBecado.html#src_EstudianteBecado_CalcularPagoMatricula_System_Int32_
+  commentId: M:src.EstudianteBecado.CalcularPagoMatricula(System.Int32)
+  name.vb: CalcularPagoMatricula(Integer)
+  fullName: src.EstudianteBecado.CalcularPagoMatricula(int)
+  fullName.vb: src.EstudianteBecado.CalcularPagoMatricula(Integer)
+  nameWithType: EstudianteBecado.CalcularPagoMatricula(int)
+  nameWithType.vb: EstudianteBecado.CalcularPagoMatricula(Integer)
+- uid: src.EstudianteBecado.CalcularPagoMatricula*
+  name: CalcularPagoMatricula
+  href: api/src.EstudianteBecado.html#src_EstudianteBecado_CalcularPagoMatricula_
+  commentId: Overload:src.EstudianteBecado.CalcularPagoMatricula
+  isSpec: "True"
+  fullName: src.EstudianteBecado.CalcularPagoMatricula
+  nameWithType: EstudianteBecado.CalcularPagoMatricula
+- uid: src.EstudianteBecado.PorcentajeBeca
+  name: PorcentajeBeca
+  href: api/src.EstudianteBecado.html#src_EstudianteBecado_PorcentajeBeca
+  commentId: P:src.EstudianteBecado.PorcentajeBeca
+  fullName: src.EstudianteBecado.PorcentajeBeca
+  nameWithType: EstudianteBecado.PorcentajeBeca
+- uid: src.EstudianteBecado.PorcentajeBeca*
+  name: PorcentajeBeca
+  href: api/src.EstudianteBecado.html#src_EstudianteBecado_PorcentajeBeca_
+  commentId: Overload:src.EstudianteBecado.PorcentajeBeca
+  isSpec: "True"
+  fullName: src.EstudianteBecado.PorcentajeBeca
+  nameWithType: EstudianteBecado.PorcentajeBeca
+- uid: src.Persona
+  name: Persona
+  href: api/src.Persona.html
+  commentId: T:src.Persona
+  fullName: src.Persona
+  nameWithType: Persona
+- uid: src.Persona.#ctor(System.String,System.String,System.Int32)
+  name: Persona(string, string, int)
+  href: api/src.Persona.html#src_Persona__ctor_System_String_System_String_System_Int32_
+  commentId: M:src.Persona.#ctor(System.String,System.String,System.Int32)
+  name.vb: New(String, String, Integer)
+  fullName: src.Persona.Persona(string, string, int)
+  fullName.vb: src.Persona.New(String, String, Integer)
+  nameWithType: Persona.Persona(string, string, int)
+  nameWithType.vb: Persona.New(String, String, Integer)
+- uid: src.Persona.#ctor*
+  name: Persona
+  href: api/src.Persona.html#src_Persona__ctor_
+  commentId: Overload:src.Persona.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: src.Persona.Persona
+  fullName.vb: src.Persona.New
+  nameWithType: Persona.Persona
+  nameWithType.vb: Persona.New
+- uid: src.Persona.Edad
+  name: Edad
+  href: api/src.Persona.html#src_Persona_Edad
+  commentId: P:src.Persona.Edad
+  fullName: src.Persona.Edad
+  nameWithType: Persona.Edad
+- uid: src.Persona.Edad*
+  name: Edad
+  href: api/src.Persona.html#src_Persona_Edad_
+  commentId: Overload:src.Persona.Edad
+  isSpec: "True"
+  fullName: src.Persona.Edad
+  nameWithType: Persona.Edad
+- uid: src.Persona.Identificacion
+  name: Identificacion
+  href: api/src.Persona.html#src_Persona_Identificacion
+  commentId: P:src.Persona.Identificacion
+  fullName: src.Persona.Identificacion
+  nameWithType: Persona.Identificacion
+- uid: src.Persona.Identificacion*
+  name: Identificacion
+  href: api/src.Persona.html#src_Persona_Identificacion_
+  commentId: Overload:src.Persona.Identificacion
+  isSpec: "True"
+  fullName: src.Persona.Identificacion
+  nameWithType: Persona.Identificacion
+- uid: src.Persona.MostrarDetalles
+  name: MostrarDetalles()
+  href: api/src.Persona.html#src_Persona_MostrarDetalles
+  commentId: M:src.Persona.MostrarDetalles
+  fullName: src.Persona.MostrarDetalles()
+  nameWithType: Persona.MostrarDetalles()
+- uid: src.Persona.MostrarDetalles*
+  name: MostrarDetalles
+  href: api/src.Persona.html#src_Persona_MostrarDetalles_
+  commentId: Overload:src.Persona.MostrarDetalles
+  isSpec: "True"
+  fullName: src.Persona.MostrarDetalles
+  nameWithType: Persona.MostrarDetalles
+- uid: src.Persona.Nombre
+  name: Nombre
+  href: api/src.Persona.html#src_Persona_Nombre
+  commentId: P:src.Persona.Nombre
+  fullName: src.Persona.Nombre
+  nameWithType: Persona.Nombre
+- uid: src.Persona.Nombre*
+  name: Nombre
+  href: api/src.Persona.html#src_Persona_Nombre_
+  commentId: Overload:src.Persona.Nombre
+  isSpec: "True"
+  fullName: src.Persona.Nombre
+  nameWithType: Persona.Nombre
+- uid: src.Profesor
+  name: Profesor
+  href: api/src.Profesor.html
+  commentId: T:src.Profesor
+  fullName: src.Profesor
+  nameWithType: Profesor
+- uid: src.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
+  name: Profesor(string, string, int, string, double)
+  href: api/src.Profesor.html#src_Profesor__ctor_System_String_System_String_System_Int32_System_String_System_Double_
+  commentId: M:src.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
+  name.vb: New(String, String, Integer, String, Double)
+  fullName: src.Profesor.Profesor(string, string, int, string, double)
+  fullName.vb: src.Profesor.New(String, String, Integer, String, Double)
+  nameWithType: Profesor.Profesor(string, string, int, string, double)
+  nameWithType.vb: Profesor.New(String, String, Integer, String, Double)
+- uid: src.Profesor.#ctor*
+  name: Profesor
+  href: api/src.Profesor.html#src_Profesor__ctor_
+  commentId: Overload:src.Profesor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: src.Profesor.Profesor
+  fullName.vb: src.Profesor.New
+  nameWithType: Profesor.Profesor
+  nameWithType.vb: Profesor.New
+- uid: src.Profesor.Especialidad
+  name: Especialidad
+  href: api/src.Profesor.html#src_Profesor_Especialidad
+  commentId: P:src.Profesor.Especialidad
+  fullName: src.Profesor.Especialidad
+  nameWithType: Profesor.Especialidad
+- uid: src.Profesor.Especialidad*
+  name: Especialidad
+  href: api/src.Profesor.html#src_Profesor_Especialidad_
+  commentId: Overload:src.Profesor.Especialidad
+  isSpec: "True"
+  fullName: src.Profesor.Especialidad
+  nameWithType: Profesor.Especialidad
+- uid: src.Profesor.MostrarDetalles
+  name: MostrarDetalles()
+  href: api/src.Profesor.html#src_Profesor_MostrarDetalles
+  commentId: M:src.Profesor.MostrarDetalles
+  fullName: src.Profesor.MostrarDetalles()
+  nameWithType: Profesor.MostrarDetalles()
+- uid: src.Profesor.MostrarDetalles*
+  name: MostrarDetalles
+  href: api/src.Profesor.html#src_Profesor_MostrarDetalles_
+  commentId: Overload:src.Profesor.MostrarDetalles
+  isSpec: "True"
+  fullName: src.Profesor.MostrarDetalles
+  nameWithType: Profesor.MostrarDetalles
+- uid: src.Profesor.SalarioBase
+  name: SalarioBase
+  href: api/src.Profesor.html#src_Profesor_SalarioBase
+  commentId: P:src.Profesor.SalarioBase
+  fullName: src.Profesor.SalarioBase
+  nameWithType: Profesor.SalarioBase
+- uid: src.Profesor.SalarioBase*
+  name: SalarioBase
+  href: api/src.Profesor.html#src_Profesor_SalarioBase_
+  commentId: Overload:src.Profesor.SalarioBase
+  isSpec: "True"
+  fullName: src.Profesor.SalarioBase
+  nameWithType: Profesor.SalarioBase

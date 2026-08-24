@@ -1,0 +1,548 @@
+### YamlMime:ManagedReference
+items:
+- uid: src.Profesor
+  commentId: T:src.Profesor
+  id: Profesor
+  parent: src
+  children:
+  - src.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
+  - src.Profesor.Especialidad
+  - src.Profesor.MostrarDetalles
+  - src.Profesor.SalarioBase
+  langs:
+  - csharp
+  - vb
+  name: Profesor
+  nameWithType: Profesor
+  fullName: src.Profesor
+  type: Class
+  source:
+    remote:
+      path: src/Profesor.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: Profesor
+    path: src/Profesor.cs
+    startLine: 9
+  assemblies:
+  - SistemaMatricula
+  namespace: src
+  summary: >-
+    Representa a un docente dentro de la universidad. 
+
+    Esta clase hereda de Persona, demostrando cómo reutilizar el código base 
+
+    para crear un rol completamente distinto al del estudiante.
+  example: []
+  syntax:
+    content: 'public class Profesor : Persona'
+    content.vb: Public Class Profesor Inherits Persona
+  inheritance:
+  - System.Object
+  - src.Persona
+  inheritedMembers:
+  - src.Persona.Nombre
+  - src.Persona.Identificacion
+  - src.Persona.Edad
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: src.Profesor.Especialidad
+  commentId: P:src.Profesor.Especialidad
+  id: Especialidad
+  parent: src.Profesor
+  langs:
+  - csharp
+  - vb
+  name: Especialidad
+  nameWithType: Profesor.Especialidad
+  fullName: src.Profesor.Especialidad
+  type: Property
+  source:
+    remote:
+      path: src/Profesor.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: Especialidad
+    path: src/Profesor.cs
+    startLine: 14
+  assemblies:
+  - SistemaMatricula
+  namespace: src
+  summary: Área de conocimiento del profesor (ej. "Ingeniería en Computadores", "Matemática").
+  example: []
+  syntax:
+    content: public string Especialidad { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Especialidad As String
+  overload: src.Profesor.Especialidad*
+- uid: src.Profesor.SalarioBase
+  commentId: P:src.Profesor.SalarioBase
+  id: SalarioBase
+  parent: src.Profesor
+  langs:
+  - csharp
+  - vb
+  name: SalarioBase
+  nameWithType: Profesor.SalarioBase
+  fullName: src.Profesor.SalarioBase
+  type: Property
+  source:
+    remote:
+      path: src/Profesor.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: SalarioBase
+    path: src/Profesor.cs
+    startLine: 20
+  assemblies:
+  - SistemaMatricula
+  namespace: src
+  summary: >-
+    El salario base asignado al profesor. 
+
+    Demuestra el uso del tipo de dato 'double' ideal para manejar dinero y decimales.
+  example: []
+  syntax:
+    content: public double SalarioBase { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property SalarioBase As Double
+  overload: src.Profesor.SalarioBase*
+- uid: src.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
+  commentId: M:src.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
+  id: '#ctor(System.String,System.String,System.Int32,System.String,System.Double)'
+  parent: src.Profesor
+  langs:
+  - csharp
+  - vb
+  name: Profesor(string, string, int, string, double)
+  nameWithType: Profesor.Profesor(string, string, int, string, double)
+  fullName: src.Profesor.Profesor(string, string, int, string, double)
+  type: Constructor
+  source:
+    remote:
+      path: src/Profesor.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: .ctor
+    path: src/Profesor.cs
+    startLine: 30
+  assemblies:
+  - SistemaMatricula
+  namespace: src
+  summary: Inicializa un nuevo objeto de tipo Profesor.
+  example: []
+  syntax:
+    content: public Profesor(string nombre, string identificacion, int edad, string especialidad, double salarioBase)
+    parameters:
+    - id: nombre
+      type: System.String
+      description: Nombre completo del docente.
+    - id: identificacion
+      type: System.String
+      description: Cédula o pasaporte del docente.
+    - id: edad
+      type: System.Int32
+      description: Edad en años.
+    - id: especialidad
+      type: System.String
+      description: El área académica en la que es experto.
+    - id: salarioBase
+      type: System.Double
+      description: Monto salarial de referencia.
+    content.vb: Public Sub New(nombre As String, identificacion As String, edad As Integer, especialidad As String, salarioBase As Double)
+  overload: src.Profesor.#ctor*
+  nameWithType.vb: Profesor.New(String, String, Integer, String, Double)
+  fullName.vb: src.Profesor.New(String, String, Integer, String, Double)
+  name.vb: New(String, String, Integer, String, Double)
+- uid: src.Profesor.MostrarDetalles
+  commentId: M:src.Profesor.MostrarDetalles
+  id: MostrarDetalles
+  parent: src.Profesor
+  langs:
+  - csharp
+  - vb
+  name: MostrarDetalles()
+  nameWithType: Profesor.MostrarDetalles()
+  fullName: src.Profesor.MostrarDetalles()
+  type: Method
+  source:
+    remote:
+      path: src/Profesor.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: MostrarDetalles
+    path: src/Profesor.cs
+    startLine: 41
+  assemblies:
+  - SistemaMatricula
+  namespace: src
+  summary: >-
+    Imprime en pantalla los datos específicos del profesor.
+
+    Sobreescribe (override) el método abstracto definido en la clase Persona.
+  example: []
+  syntax:
+    content: public override void MostrarDetalles()
+    content.vb: Public Overrides Sub MostrarDetalles()
+  overridden: src.Persona.MostrarDetalles
+  overload: src.Profesor.MostrarDetalles*
+references:
+- uid: src
+  commentId: N:src
+  href: src.html
+  name: src
+  nameWithType: src
+  fullName: src
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: src.Persona
+  commentId: T:src.Persona
+  parent: src
+  href: src.Persona.html
+  name: Persona
+  nameWithType: Persona
+  fullName: src.Persona
+- uid: src.Persona.Nombre
+  commentId: P:src.Persona.Nombre
+  parent: src.Persona
+  href: src.Persona.html#src_Persona_Nombre
+  name: Nombre
+  nameWithType: Persona.Nombre
+  fullName: src.Persona.Nombre
+- uid: src.Persona.Identificacion
+  commentId: P:src.Persona.Identificacion
+  parent: src.Persona
+  href: src.Persona.html#src_Persona_Identificacion
+  name: Identificacion
+  nameWithType: Persona.Identificacion
+  fullName: src.Persona.Identificacion
+- uid: src.Persona.Edad
+  commentId: P:src.Persona.Edad
+  parent: src.Persona
+  href: src.Persona.html#src_Persona_Edad
+  name: Edad
+  nameWithType: Persona.Edad
+  fullName: src.Persona.Edad
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: src.Profesor.Especialidad*
+  commentId: Overload:src.Profesor.Especialidad
+  href: src.Profesor.html#src_Profesor_Especialidad
+  name: Especialidad
+  nameWithType: Profesor.Especialidad
+  fullName: src.Profesor.Especialidad
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: src.Profesor.SalarioBase*
+  commentId: Overload:src.Profesor.SalarioBase
+  href: src.Profesor.html#src_Profesor_SalarioBase
+  name: SalarioBase
+  nameWithType: Profesor.SalarioBase
+  fullName: src.Profesor.SalarioBase
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: src.Profesor.#ctor*
+  commentId: Overload:src.Profesor.#ctor
+  href: src.Profesor.html#src_Profesor__ctor_System_String_System_String_System_Int32_System_String_System_Double_
+  name: Profesor
+  nameWithType: Profesor.Profesor
+  fullName: src.Profesor.Profesor
+  nameWithType.vb: Profesor.New
+  fullName.vb: src.Profesor.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: src.Persona.MostrarDetalles
+  commentId: M:src.Persona.MostrarDetalles
+  parent: src.Persona
+  href: src.Persona.html#src_Persona_MostrarDetalles
+  name: MostrarDetalles()
+  nameWithType: Persona.MostrarDetalles()
+  fullName: src.Persona.MostrarDetalles()
+  spec.csharp:
+  - uid: src.Persona.MostrarDetalles
+    name: MostrarDetalles
+    href: src.Persona.html#src_Persona_MostrarDetalles
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: src.Persona.MostrarDetalles
+    name: MostrarDetalles
+    href: src.Persona.html#src_Persona_MostrarDetalles
+  - name: (
+  - name: )
+- uid: src.Profesor.MostrarDetalles*
+  commentId: Overload:src.Profesor.MostrarDetalles
+  href: src.Profesor.html#src_Profesor_MostrarDetalles
+  name: MostrarDetalles
+  nameWithType: Profesor.MostrarDetalles
+  fullName: src.Profesor.MostrarDetalles
