@@ -1,6 +1,6 @@
 using System;
 
-namespace SistemaMatricula
+namespace src
 {
     /// <summary>
     /// Representa a un estudiante regular de la universidad.
