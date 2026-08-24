@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Persona | mysite </title>
+      <title>Class Horario | mysite </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Persona | mysite ">
+      <meta name="title" content="Class Horario | mysite ">
       
-      <meta name="description" content="Abstracci&#243;n y Clase. Es el &amp;quot;molde gen&#233;rico&amp;quot; para cualquier individuo en la universidad. Al ser &#39;abstract&#39;, el sistema no permite crear objetos directos de ella (nadie es &amp;quot;solo una persona&amp;quot; en el sistema, debe tener un rol).">
+      <meta name="description" content="Representa el bloque de tiempo y espacio donde se imparte una clase. Es perfecta para explicar los Tipos de Datos.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/JalemOG/SistemaMatricula/new/feature/system/apiSpec/new?filename=src_Persona.md&amp;value=---%0Auid%3A%20src.Persona%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/JalemOG/SistemaMatricula/new/feature/system/apiSpec/new?filename=SistemaMatricula_Horario.md&amp;value=---%0Auid%3A%20SistemaMatricula.Horario%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,28 +84,26 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="src.Persona">
+        <article data-uid="SistemaMatricula.Horario">
 
 
 
-  <h1 id="src_Persona" data-uid="src.Persona" class="text-break">
-Class Persona  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Persona.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h1 id="SistemaMatricula_Horario" data-uid="SistemaMatricula.Horario" class="text-break">
+Class Horario  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Horario.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="src.html">src</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SistemaMatricula.html">SistemaMatricula</a></dd></dl>
   <dl><dt>Assembly</dt><dd>SistemaMatricula.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Abstracción y Clase.
-Es el &quot;molde genérico&quot; para cualquier individuo en la universidad.
-Al ser 'abstract', el sistema no permite crear objetos directos de ella
-(nadie es &quot;solo una persona&quot; en el sistema, debe tener un rol).</p>
+  <div class="markdown summary"><p>Representa el bloque de tiempo y espacio donde se imparte una clase.
+Es perfecta para explicar los Tipos de Datos.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Persona</code></pre>
+    <pre><code class="lang-csharp hljs">public class Horario</code></pre>
   </div>
 
 
@@ -115,18 +113,11 @@ Al ser 'abstract', el sistema no permite crear objetos directos de ella
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Persona</span></div>
+      <div><span class="xref">Horario</span></div>
     </dd>
   </dl>
 
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="src.Estudiante.html">Estudiante</a></div>
-      <div><a class="xref" href="src.Profesor.html">Profesor</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
@@ -163,32 +154,31 @@ Al ser 'abstract', el sistema no permite crear objetos directos de ella
 </h2>
 
 
-  <a id="src_Persona__ctor_" data-uid="src.Persona.#ctor*"></a>
+  <a id="SistemaMatricula_Horario__ctor_" data-uid="SistemaMatricula.Horario.#ctor*"></a>
 
-  <h3 id="src_Persona__ctor_System_String_System_String_System_Int32_" data-uid="src.Persona.#ctor(System.String,System.String,System.Int32)">
-  Persona(string, string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Persona.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SistemaMatricula_Horario__ctor_System_String_System_Int32_System_Int32_System_String_" data-uid="SistemaMatricula.Horario.#ctor(System.String,System.Int32,System.Int32,System.String)">
+  Horario(string, int, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Horario.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Constructor que inicializa los datos básicos que toda persona debe tener.</p>
+  <div class="markdown level1 summary"><p>Constructor: Construye el evento en el calendario.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Persona(string nombre, string identificacion, int edad)</code></pre>
+    <pre><code class="lang-csharp hljs">public Horario(string diaSemana, int horaInicio, int horaFin, string aula)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>nombre</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Nombre completo.</p>
-</dd>
-    <dt><code>identificacion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Cédula o pasaporte.</p>
-</dd>
-    <dt><code>edad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>Edad actual.</p>
-</dd>
+    <dt><code>diaSemana</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>horaInicio</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>horaFin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>aula</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -206,20 +196,84 @@ Al ser 'abstract', el sistema no permite crear objetos directos de ella
 </h2>
 
 
-  <a id="src_Persona_Edad_" data-uid="src.Persona.Edad*"></a>
+  <a id="SistemaMatricula_Horario_Aula_" data-uid="SistemaMatricula.Horario.Aula*"></a>
 
-  <h3 id="src_Persona_Edad" data-uid="src.Persona.Edad">
-  Edad
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Persona.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SistemaMatricula_Horario_Aula" data-uid="SistemaMatricula.Horario.Aula">
+  Aula
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Horario.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Edad en años.
-Demuestra el tipo de dato 'int' para números enteros</p>
+  <div class="markdown level1 summary"><p>El aula física asignada.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Edad { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Aula { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SistemaMatricula_Horario_DiaSemana_" data-uid="SistemaMatricula.Horario.DiaSemana*"></a>
+
+  <h3 id="SistemaMatricula_Horario_DiaSemana" data-uid="SistemaMatricula.Horario.DiaSemana">
+  DiaSemana
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Horario.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>El día de la semana (ej. &quot;Lunes&quot;).
+Demuestra el uso del tipo de dato 'string' para cadenas de texto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DiaSemana { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SistemaMatricula_Horario_HoraFin_" data-uid="SistemaMatricula.Horario.HoraFin*"></a>
+
+  <h3 id="SistemaMatricula_Horario_HoraFin" data-uid="SistemaMatricula.Horario.HoraFin">
+  HoraFin
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Horario.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>La hora de finalización (formato 24h).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HoraFin { get; set; }</code></pre>
   </div>
 
 
@@ -239,19 +293,20 @@ Demuestra el tipo de dato 'int' para números enteros</p>
 
 
 
-  <a id="src_Persona_Identificacion_" data-uid="src.Persona.Identificacion*"></a>
+  <a id="SistemaMatricula_Horario_HoraInicio_" data-uid="SistemaMatricula.Horario.HoraInicio*"></a>
 
-  <h3 id="src_Persona_Identificacion" data-uid="src.Persona.Identificacion">
-  Identificacion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Persona.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SistemaMatricula_Horario_HoraInicio" data-uid="SistemaMatricula.Horario.HoraInicio">
+  HoraInicio
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Horario.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Documento de identidad.</p>
+  <div class="markdown level1 summary"><p>La hora de inicio (formato 24h).
+Demuestra el uso del tipo de dato 'int' para números enteros.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Identificacion { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int HoraInicio { get; set; }</code></pre>
   </div>
 
 
@@ -260,39 +315,7 @@ Demuestra el tipo de dato 'int' para números enteros</p>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="src_Persona_Nombre_" data-uid="src.Persona.Nombre*"></a>
-
-  <h3 id="src_Persona_Nombre" data-uid="src.Persona.Nombre">
-  Nombre
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Persona.cs/#L16"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Nombre completo del individuo.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Nombre { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -307,23 +330,29 @@ Demuestra el tipo de dato 'int' para números enteros</p>
 </h2>
 
 
-  <a id="src_Persona_MostrarDetalles_" data-uid="src.Persona.MostrarDetalles*"></a>
+  <a id="SistemaMatricula_Horario_ObtenerFormatoHorario_" data-uid="SistemaMatricula.Horario.ObtenerFormatoHorario*"></a>
 
-  <h3 id="src_Persona_MostrarDetalles" data-uid="src.Persona.MostrarDetalles">
-  MostrarDetalles()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Persona.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SistemaMatricula_Horario_ObtenerFormatoHorario" data-uid="SistemaMatricula.Horario.ObtenerFormatoHorario">
+  ObtenerFormatoHorario()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Horario.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Método abstracto que obliga a las clases hijas
-a definir cómo mostrar sus propios detalles.</p>
+  <div class="markdown level1 summary"><p>Une todos los datos para devolver un texto legible.
+Demuestra que las funciones también tienen Tipos de Datos (en este caso, retorna un 'string').</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void MostrarDetalles()</code></pre>
+    <pre><code class="lang-csharp hljs">public string ObtenerFormatoHorario()</code></pre>
   </div>
 
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Una cadena de texto con el formato del horario.</p>
+</dd>
+  </dl>
 
 
 
@@ -339,7 +368,7 @@ a definir cómo mostrar sus propios detalles.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Persona.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JalemOG/SistemaMatricula/blob/feature/system/src/Horario.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

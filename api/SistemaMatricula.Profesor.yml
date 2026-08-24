@@ -1,56 +1,49 @@
 ### YamlMime:ManagedReference
 items:
-- uid: src.EstudianteBecado
-  commentId: T:src.EstudianteBecado
-  id: EstudianteBecado
-  parent: src
+- uid: SistemaMatricula.Profesor
+  commentId: T:SistemaMatricula.Profesor
+  id: Profesor
+  parent: SistemaMatricula
   children:
-  - src.EstudianteBecado.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)
-  - src.EstudianteBecado.CalcularPagoMatricula(System.Int32)
-  - src.EstudianteBecado.PorcentajeBeca
+  - SistemaMatricula.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
+  - SistemaMatricula.Profesor.Especialidad
+  - SistemaMatricula.Profesor.MostrarDetalles
+  - SistemaMatricula.Profesor.SalarioBase
   langs:
   - csharp
   - vb
-  name: EstudianteBecado
-  nameWithType: EstudianteBecado
-  fullName: src.EstudianteBecado
+  name: Profesor
+  nameWithType: Profesor
+  fullName: SistemaMatricula.Profesor
   type: Class
   source:
     remote:
-      path: src/EstudianteBecado.cs
+      path: src/Profesor.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: EstudianteBecado
-    path: src/EstudianteBecado.cs
-    startLine: 13
+    id: Profesor
+    path: src/Profesor.cs
+    startLine: 9
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
-    Representa a un estudiante que cuenta con un porcentaje de descuento en su matrícula.
+    Representa a un docente dentro de la universidad. 
 
+    Esta clase hereda de Persona, demostrando cómo reutilizar el código base 
 
-    CONCEPTOS APLICADOS:
-
-    1. Herencia Nivel 3: Esta clase hereda de Estudiante, la cual a su vez hereda de Persona 
-       (Persona -&gt; Estudiante -&gt; EstudianteBecado).
-    2. Polimorfismo: Modifica la forma en la que se calcula el pago de la matrícula, 
-       aplicando un descuento específico que un estudiante regular no tiene.
+    para crear un rol completamente distinto al del estudiante.
   example: []
   syntax:
-    content: 'public class EstudianteBecado : Estudiante'
-    content.vb: Public Class EstudianteBecado Inherits Estudiante
+    content: 'public class Profesor : Persona'
+    content.vb: Public Class Profesor Inherits Persona
   inheritance:
   - System.Object
-  - src.Persona
-  - src.Estudiante
+  - SistemaMatricula.Persona
   inheritedMembers:
-  - src.Estudiante.Carne
-  - src.Estudiante.Carrera
-  - src.Estudiante.MostrarDetalles
-  - src.Persona.Nombre
-  - src.Persona.Identificacion
-  - src.Persona.Edad
+  - SistemaMatricula.Persona.Nombre
+  - SistemaMatricula.Persona.Identificacion
+  - SistemaMatricula.Persona.Edad
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -58,139 +51,157 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: src.EstudianteBecado.PorcentajeBeca
-  commentId: P:src.EstudianteBecado.PorcentajeBeca
-  id: PorcentajeBeca
-  parent: src.EstudianteBecado
+- uid: SistemaMatricula.Profesor.Especialidad
+  commentId: P:SistemaMatricula.Profesor.Especialidad
+  id: Especialidad
+  parent: SistemaMatricula.Profesor
   langs:
   - csharp
   - vb
-  name: PorcentajeBeca
-  nameWithType: EstudianteBecado.PorcentajeBeca
-  fullName: src.EstudianteBecado.PorcentajeBeca
+  name: Especialidad
+  nameWithType: Profesor.Especialidad
+  fullName: SistemaMatricula.Profesor.Especialidad
   type: Property
   source:
     remote:
-      path: src/EstudianteBecado.cs
+      path: src/Profesor.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: PorcentajeBeca
-    path: src/EstudianteBecado.cs
-    startLine: 18
+    id: Especialidad
+    path: src/Profesor.cs
+    startLine: 14
   assemblies:
   - SistemaMatricula
-  namespace: src
-  summary: Porcentaje de descuento aplicado a la matrícula (por ejemplo, 50 para un 50% de beca).
+  namespace: SistemaMatricula
+  summary: Área de conocimiento del profesor (ej. "Ingeniería en Computadores", "Matemática").
   example: []
   syntax:
-    content: public double PorcentajeBeca { get; set; }
+    content: public string Especialidad { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Especialidad As String
+  overload: SistemaMatricula.Profesor.Especialidad*
+- uid: SistemaMatricula.Profesor.SalarioBase
+  commentId: P:SistemaMatricula.Profesor.SalarioBase
+  id: SalarioBase
+  parent: SistemaMatricula.Profesor
+  langs:
+  - csharp
+  - vb
+  name: SalarioBase
+  nameWithType: Profesor.SalarioBase
+  fullName: SistemaMatricula.Profesor.SalarioBase
+  type: Property
+  source:
+    remote:
+      path: src/Profesor.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: SalarioBase
+    path: src/Profesor.cs
+    startLine: 20
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    El salario base asignado al profesor. 
+
+    Demuestra el uso del tipo de dato 'double' ideal para manejar dinero y decimales.
+  example: []
+  syntax:
+    content: public double SalarioBase { get; set; }
     parameters: []
     return:
       type: System.Double
-    content.vb: Public Property PorcentajeBeca As Double
-  overload: src.EstudianteBecado.PorcentajeBeca*
-- uid: src.EstudianteBecado.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)
-  commentId: M:src.EstudianteBecado.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)
-  id: '#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)'
-  parent: src.EstudianteBecado
+    content.vb: Public Property SalarioBase As Double
+  overload: SistemaMatricula.Profesor.SalarioBase*
+- uid: SistemaMatricula.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
+  commentId: M:SistemaMatricula.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
+  id: '#ctor(System.String,System.String,System.Int32,System.String,System.Double)'
+  parent: SistemaMatricula.Profesor
   langs:
   - csharp
   - vb
-  name: EstudianteBecado(string, string, int, string, string, double)
-  nameWithType: EstudianteBecado.EstudianteBecado(string, string, int, string, string, double)
-  fullName: src.EstudianteBecado.EstudianteBecado(string, string, int, string, string, double)
+  name: Profesor(string, string, int, string, double)
+  nameWithType: Profesor.Profesor(string, string, int, string, double)
+  fullName: SistemaMatricula.Profesor.Profesor(string, string, int, string, double)
   type: Constructor
   source:
     remote:
-      path: src/EstudianteBecado.cs
+      path: src/Profesor.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
     id: .ctor
-    path: src/EstudianteBecado.cs
+    path: src/Profesor.cs
     startLine: 30
   assemblies:
   - SistemaMatricula
-  namespace: src
-  summary: >-
-    Inicializa un nuevo estudiante becado. Note cómo usa 'base(...)' para enviar 
-
-    los datos generales a la clase Estudiante, añadiendo únicamente el porcentaje de beca.
+  namespace: SistemaMatricula
+  summary: Inicializa un nuevo objeto de tipo Profesor.
   example: []
   syntax:
-    content: public EstudianteBecado(string nombre, string identificacion, int edad, string carne, string carrera, double porcentajeBeca)
+    content: public Profesor(string nombre, string identificacion, int edad, string especialidad, double salarioBase)
     parameters:
     - id: nombre
       type: System.String
-      description: Nombre completo del estudiante.
+      description: Nombre completo del docente.
     - id: identificacion
       type: System.String
-      description: Cédula o pasaporte.
+      description: Cédula o pasaporte del docente.
     - id: edad
       type: System.Int32
       description: Edad en años.
-    - id: carne
+    - id: especialidad
       type: System.String
-      description: Identificador único universitario.
-    - id: carrera
-      type: System.String
-      description: Carrera que cursa actualmente.
-    - id: porcentajeBeca
+      description: El área académica en la que es experto.
+    - id: salarioBase
       type: System.Double
-      description: El porcentaje de descuento que posee.
-    content.vb: Public Sub New(nombre As String, identificacion As String, edad As Integer, carne As String, carrera As String, porcentajeBeca As Double)
-  overload: src.EstudianteBecado.#ctor*
-  nameWithType.vb: EstudianteBecado.New(String, String, Integer, String, String, Double)
-  fullName.vb: src.EstudianteBecado.New(String, String, Integer, String, String, Double)
-  name.vb: New(String, String, Integer, String, String, Double)
-- uid: src.EstudianteBecado.CalcularPagoMatricula(System.Int32)
-  commentId: M:src.EstudianteBecado.CalcularPagoMatricula(System.Int32)
-  id: CalcularPagoMatricula(System.Int32)
-  parent: src.EstudianteBecado
+      description: Monto salarial de referencia.
+    content.vb: Public Sub New(nombre As String, identificacion As String, edad As Integer, especialidad As String, salarioBase As Double)
+  overload: SistemaMatricula.Profesor.#ctor*
+  nameWithType.vb: Profesor.New(String, String, Integer, String, Double)
+  fullName.vb: SistemaMatricula.Profesor.New(String, String, Integer, String, Double)
+  name.vb: New(String, String, Integer, String, Double)
+- uid: SistemaMatricula.Profesor.MostrarDetalles
+  commentId: M:SistemaMatricula.Profesor.MostrarDetalles
+  id: MostrarDetalles
+  parent: SistemaMatricula.Profesor
   langs:
   - csharp
   - vb
-  name: CalcularPagoMatricula(int)
-  nameWithType: EstudianteBecado.CalcularPagoMatricula(int)
-  fullName: src.EstudianteBecado.CalcularPagoMatricula(int)
+  name: MostrarDetalles()
+  nameWithType: Profesor.MostrarDetalles()
+  fullName: SistemaMatricula.Profesor.MostrarDetalles()
   type: Method
   source:
     remote:
-      path: src/EstudianteBecado.cs
+      path: src/Profesor.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: CalcularPagoMatricula
-    path: src/EstudianteBecado.cs
-    startLine: 42
+    id: MostrarDetalles
+    path: src/Profesor.cs
+    startLine: 41
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
-    Calcula el costo total de la matrícula aplicando el descuento de la beca.
+    Imprime en pantalla los datos específicos del profesor.
 
-    Sobreescribe (override) el comportamiento original definido en la clase Estudiante.
+    Sobreescribe (override) el método abstracto definido en la clase Persona.
   example: []
   syntax:
-    content: public override double CalcularPagoMatricula(int creditos)
-    parameters:
-    - id: creditos
-      type: System.Int32
-      description: Cantidad de créditos a matricular.
-    return:
-      type: System.Double
-      description: El costo final a pagar con el descuento ya aplicado.
-    content.vb: Public Overrides Function CalcularPagoMatricula(creditos As Integer) As Double
-  overridden: src.Estudiante.CalcularPagoMatricula(System.Int32)
-  overload: src.EstudianteBecado.CalcularPagoMatricula*
-  nameWithType.vb: EstudianteBecado.CalcularPagoMatricula(Integer)
-  fullName.vb: src.EstudianteBecado.CalcularPagoMatricula(Integer)
-  name.vb: CalcularPagoMatricula(Integer)
+    content: public override void MostrarDetalles()
+    content.vb: Public Overrides Sub MostrarDetalles()
+  overridden: SistemaMatricula.Persona.MostrarDetalles
+  overload: SistemaMatricula.Profesor.MostrarDetalles*
 references:
-- uid: src
-  commentId: N:src
-  href: src.html
-  name: src
-  nameWithType: src
-  fullName: src
+- uid: SistemaMatricula
+  commentId: N:SistemaMatricula
+  href: SistemaMatricula.html
+  name: SistemaMatricula
+  nameWithType: SistemaMatricula
+  fullName: SistemaMatricula
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -202,74 +213,34 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: src.Persona
-  commentId: T:src.Persona
-  parent: src
-  href: src.Persona.html
+- uid: SistemaMatricula.Persona
+  commentId: T:SistemaMatricula.Persona
+  parent: SistemaMatricula
+  href: SistemaMatricula.Persona.html
   name: Persona
   nameWithType: Persona
-  fullName: src.Persona
-- uid: src.Estudiante
-  commentId: T:src.Estudiante
-  parent: src
-  href: src.Estudiante.html
-  name: Estudiante
-  nameWithType: Estudiante
-  fullName: src.Estudiante
-- uid: src.Estudiante.Carne
-  commentId: P:src.Estudiante.Carne
-  parent: src.Estudiante
-  href: src.Estudiante.html#src_Estudiante_Carne
-  name: Carne
-  nameWithType: Estudiante.Carne
-  fullName: src.Estudiante.Carne
-- uid: src.Estudiante.Carrera
-  commentId: P:src.Estudiante.Carrera
-  parent: src.Estudiante
-  href: src.Estudiante.html#src_Estudiante_Carrera
-  name: Carrera
-  nameWithType: Estudiante.Carrera
-  fullName: src.Estudiante.Carrera
-- uid: src.Estudiante.MostrarDetalles
-  commentId: M:src.Estudiante.MostrarDetalles
-  parent: src.Estudiante
-  href: src.Estudiante.html#src_Estudiante_MostrarDetalles
-  name: MostrarDetalles()
-  nameWithType: Estudiante.MostrarDetalles()
-  fullName: src.Estudiante.MostrarDetalles()
-  spec.csharp:
-  - uid: src.Estudiante.MostrarDetalles
-    name: MostrarDetalles
-    href: src.Estudiante.html#src_Estudiante_MostrarDetalles
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: src.Estudiante.MostrarDetalles
-    name: MostrarDetalles
-    href: src.Estudiante.html#src_Estudiante_MostrarDetalles
-  - name: (
-  - name: )
-- uid: src.Persona.Nombre
-  commentId: P:src.Persona.Nombre
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_Nombre
+  fullName: SistemaMatricula.Persona
+- uid: SistemaMatricula.Persona.Nombre
+  commentId: P:SistemaMatricula.Persona.Nombre
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_Nombre
   name: Nombre
   nameWithType: Persona.Nombre
-  fullName: src.Persona.Nombre
-- uid: src.Persona.Identificacion
-  commentId: P:src.Persona.Identificacion
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_Identificacion
+  fullName: SistemaMatricula.Persona.Nombre
+- uid: SistemaMatricula.Persona.Identificacion
+  commentId: P:SistemaMatricula.Persona.Identificacion
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_Identificacion
   name: Identificacion
   nameWithType: Persona.Identificacion
-  fullName: src.Persona.Identificacion
-- uid: src.Persona.Edad
-  commentId: P:src.Persona.Edad
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_Edad
+  fullName: SistemaMatricula.Persona.Identificacion
+- uid: SistemaMatricula.Persona.Edad
+  commentId: P:SistemaMatricula.Persona.Edad
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_Edad
   name: Edad
   nameWithType: Persona.Edad
-  fullName: src.Persona.Edad
+  fullName: SistemaMatricula.Persona.Edad
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -496,32 +467,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: src.EstudianteBecado.PorcentajeBeca*
-  commentId: Overload:src.EstudianteBecado.PorcentajeBeca
-  href: src.EstudianteBecado.html#src_EstudianteBecado_PorcentajeBeca
-  name: PorcentajeBeca
-  nameWithType: EstudianteBecado.PorcentajeBeca
-  fullName: src.EstudianteBecado.PorcentajeBeca
-- uid: System.Double
-  commentId: T:System.Double
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
-- uid: src.EstudianteBecado.#ctor*
-  commentId: Overload:src.EstudianteBecado.#ctor
-  href: src.EstudianteBecado.html#src_EstudianteBecado__ctor_System_String_System_String_System_Int32_System_String_System_String_System_Double_
-  name: EstudianteBecado
-  nameWithType: EstudianteBecado.EstudianteBecado
-  fullName: src.EstudianteBecado.EstudianteBecado
-  nameWithType.vb: EstudianteBecado.New
-  fullName.vb: src.EstudianteBecado.New
-  name.vb: New
+- uid: SistemaMatricula.Profesor.Especialidad*
+  commentId: Overload:SistemaMatricula.Profesor.Especialidad
+  href: SistemaMatricula.Profesor.html#SistemaMatricula_Profesor_Especialidad
+  name: Especialidad
+  nameWithType: Profesor.Especialidad
+  fullName: SistemaMatricula.Profesor.Especialidad
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -533,6 +484,32 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: SistemaMatricula.Profesor.SalarioBase*
+  commentId: Overload:SistemaMatricula.Profesor.SalarioBase
+  href: SistemaMatricula.Profesor.html#SistemaMatricula_Profesor_SalarioBase
+  name: SalarioBase
+  nameWithType: Profesor.SalarioBase
+  fullName: SistemaMatricula.Profesor.SalarioBase
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SistemaMatricula.Profesor.#ctor*
+  commentId: Overload:SistemaMatricula.Profesor.#ctor
+  href: SistemaMatricula.Profesor.html#SistemaMatricula_Profesor__ctor_System_String_System_String_System_Int32_System_String_System_Double_
+  name: Profesor
+  nameWithType: Profesor.Profesor
+  fullName: SistemaMatricula.Profesor.Profesor
+  nameWithType.vb: Profesor.New
+  fullName.vb: SistemaMatricula.Profesor.New
+  name.vb: New
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -544,40 +521,28 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: src.Estudiante.CalcularPagoMatricula(System.Int32)
-  commentId: M:src.Estudiante.CalcularPagoMatricula(System.Int32)
-  parent: src.Estudiante
-  isExternal: true
-  href: src.Estudiante.html#src_Estudiante_CalcularPagoMatricula_System_Int32_
-  name: CalcularPagoMatricula(int)
-  nameWithType: Estudiante.CalcularPagoMatricula(int)
-  fullName: src.Estudiante.CalcularPagoMatricula(int)
-  nameWithType.vb: Estudiante.CalcularPagoMatricula(Integer)
-  fullName.vb: src.Estudiante.CalcularPagoMatricula(Integer)
-  name.vb: CalcularPagoMatricula(Integer)
+- uid: SistemaMatricula.Persona.MostrarDetalles
+  commentId: M:SistemaMatricula.Persona.MostrarDetalles
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_MostrarDetalles
+  name: MostrarDetalles()
+  nameWithType: Persona.MostrarDetalles()
+  fullName: SistemaMatricula.Persona.MostrarDetalles()
   spec.csharp:
-  - uid: src.Estudiante.CalcularPagoMatricula(System.Int32)
-    name: CalcularPagoMatricula
-    href: src.Estudiante.html#src_Estudiante_CalcularPagoMatricula_System_Int32_
+  - uid: SistemaMatricula.Persona.MostrarDetalles
+    name: MostrarDetalles
+    href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_MostrarDetalles
   - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
   spec.vb:
-  - uid: src.Estudiante.CalcularPagoMatricula(System.Int32)
-    name: CalcularPagoMatricula
-    href: src.Estudiante.html#src_Estudiante_CalcularPagoMatricula_System_Int32_
+  - uid: SistemaMatricula.Persona.MostrarDetalles
+    name: MostrarDetalles
+    href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_MostrarDetalles
   - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: src.EstudianteBecado.CalcularPagoMatricula*
-  commentId: Overload:src.EstudianteBecado.CalcularPagoMatricula
-  href: src.EstudianteBecado.html#src_EstudianteBecado_CalcularPagoMatricula_System_Int32_
-  name: CalcularPagoMatricula
-  nameWithType: EstudianteBecado.CalcularPagoMatricula
-  fullName: src.EstudianteBecado.CalcularPagoMatricula
+- uid: SistemaMatricula.Profesor.MostrarDetalles*
+  commentId: Overload:SistemaMatricula.Profesor.MostrarDetalles
+  href: SistemaMatricula.Profesor.html#SistemaMatricula_Profesor_MostrarDetalles
+  name: MostrarDetalles
+  nameWithType: Profesor.MostrarDetalles
+  fullName: SistemaMatricula.Profesor.MostrarDetalles

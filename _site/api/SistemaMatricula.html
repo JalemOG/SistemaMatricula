@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace src | mysite </title>
+      <title>Namespace SistemaMatricula | mysite </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace src | mysite ">
+      <meta name="title" content="Namespace SistemaMatricula | mysite ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -84,9 +84,9 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="src">
+        <article data-uid="SistemaMatricula">
 
-  <h1 id="src" data-uid="src" class="text-break">Namespace src</h1>
+  <h1 id="SistemaMatricula" data-uid="SistemaMatricula" class="text-break">Namespace SistemaMatricula</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
@@ -95,14 +95,20 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="src.Estudiante.html">Estudiante</a></dt>
+      <dt><a class="xref" href="SistemaMatricula.Curso.html">Curso</a></dt>
+      <dd><p>Representa la materia académica.
+Une diferentes clases (Profesor y Horario) dentro de una sola estructura.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SistemaMatricula.Estudiante.html">Estudiante</a></dt>
       <dd><p>Representa a un estudiante regular de la universidad.
 Demuestra el concepto de Herencia, ya que obtiene automáticamente el Nombre,
 Identificación y Edad de la clase base Persona.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="src.EstudianteBecado.html">EstudianteBecado</a></dt>
+      <dt><a class="xref" href="SistemaMatricula.EstudianteBecado.html">EstudianteBecado</a></dt>
       <dd><p>Representa a un estudiante que cuenta con un porcentaje de descuento en su matrícula.</p>
 <p>CONCEPTOS APLICADOS:</p>
 <ol>
@@ -114,7 +120,19 @@ aplicando un descuento específico que un estudiante regular no tiene.</li>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="src.Persona.html">Persona</a></dt>
+      <dt><a class="xref" href="SistemaMatricula.Horario.html">Horario</a></dt>
+      <dd><p>Representa el bloque de tiempo y espacio donde se imparte una clase.
+Es perfecta para explicar los Tipos de Datos.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SistemaMatricula.Matricula.html">Matricula</a></dt>
+      <dd><p>Gestiona el proceso de inscripción de los estudiantes a los cursos.
+Es la clase ideal para explicar el concepto de ENCAPSULAMIENTO.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="SistemaMatricula.Persona.html">Persona</a></dt>
       <dd><p>Abstracción y Clase.
 Es el &quot;molde genérico&quot; para cualquier individuo en la universidad.
 Al ser 'abstract', el sistema no permite crear objetos directos de ella
@@ -122,7 +140,7 @@ Al ser 'abstract', el sistema no permite crear objetos directos de ella
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="src.Profesor.html">Profesor</a></dt>
+      <dt><a class="xref" href="SistemaMatricula.Profesor.html">Profesor</a></dt>
       <dd><p>Representa a un docente dentro de la universidad.
 Esta clase hereda de Persona, demostrando cómo reutilizar el código base
 para crear un rol completamente distinto al del estudiante.</p>

@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: SistemaMatricula.EstudianteBecado
+  commentId: T:SistemaMatricula.EstudianteBecado
+  id: EstudianteBecado
+  parent: SistemaMatricula
+  children:
+  - SistemaMatricula.EstudianteBecado.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)
+  - SistemaMatricula.EstudianteBecado.CalcularPagoMatricula(System.Int32)
+  - SistemaMatricula.EstudianteBecado.PorcentajeBeca
+  langs:
+  - csharp
+  - vb
+  name: EstudianteBecado
+  nameWithType: EstudianteBecado
+  fullName: SistemaMatricula.EstudianteBecado
+  type: Class
+  source:
+    remote:
+      path: src/EstudianteBecado.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: EstudianteBecado
+    path: src/EstudianteBecado.cs
+    startLine: 13
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    Representa a un estudiante que cuenta con un porcentaje de descuento en su matrícula.
+
+
+    CONCEPTOS APLICADOS:
+
+    1. Herencia Nivel 3: Esta clase hereda de Estudiante, la cual a su vez hereda de Persona 
+       (Persona -&gt; Estudiante -&gt; EstudianteBecado).
+    2. Polimorfismo: Modifica la forma en la que se calcula el pago de la matrícula, 
+       aplicando un descuento específico que un estudiante regular no tiene.
+  example: []
+  syntax:
+    content: 'public class EstudianteBecado : Estudiante'
+    content.vb: Public Class EstudianteBecado Inherits Estudiante
+  inheritance:
+  - System.Object
+  - SistemaMatricula.Persona
+  - SistemaMatricula.Estudiante
+  inheritedMembers:
+  - SistemaMatricula.Estudiante.Carne
+  - SistemaMatricula.Estudiante.Carrera
+  - SistemaMatricula.Estudiante.MostrarDetalles
+  - SistemaMatricula.Persona.Nombre
+  - SistemaMatricula.Persona.Identificacion
+  - SistemaMatricula.Persona.Edad
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SistemaMatricula.EstudianteBecado.PorcentajeBeca
+  commentId: P:SistemaMatricula.EstudianteBecado.PorcentajeBeca
+  id: PorcentajeBeca
+  parent: SistemaMatricula.EstudianteBecado
+  langs:
+  - csharp
+  - vb
+  name: PorcentajeBeca
+  nameWithType: EstudianteBecado.PorcentajeBeca
+  fullName: SistemaMatricula.EstudianteBecado.PorcentajeBeca
+  type: Property
+  source:
+    remote:
+      path: src/EstudianteBecado.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: PorcentajeBeca
+    path: src/EstudianteBecado.cs
+    startLine: 18
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: Porcentaje de descuento aplicado a la matrícula (por ejemplo, 50 para un 50% de beca).
+  example: []
+  syntax:
+    content: public double PorcentajeBeca { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property PorcentajeBeca As Double
+  overload: SistemaMatricula.EstudianteBecado.PorcentajeBeca*
+- uid: SistemaMatricula.EstudianteBecado.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)
+  commentId: M:SistemaMatricula.EstudianteBecado.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)
+  id: '#ctor(System.String,System.String,System.Int32,System.String,System.String,System.Double)'
+  parent: SistemaMatricula.EstudianteBecado
+  langs:
+  - csharp
+  - vb
+  name: EstudianteBecado(string, string, int, string, string, double)
+  nameWithType: EstudianteBecado.EstudianteBecado(string, string, int, string, string, double)
+  fullName: SistemaMatricula.EstudianteBecado.EstudianteBecado(string, string, int, string, string, double)
+  type: Constructor
+  source:
+    remote:
+      path: src/EstudianteBecado.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: .ctor
+    path: src/EstudianteBecado.cs
+    startLine: 30
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    Inicializa un nuevo estudiante becado. Note cómo usa 'base(...)' para enviar 
+
+    los datos generales a la clase Estudiante, añadiendo únicamente el porcentaje de beca.
+  example: []
+  syntax:
+    content: public EstudianteBecado(string nombre, string identificacion, int edad, string carne, string carrera, double porcentajeBeca)
+    parameters:
+    - id: nombre
+      type: System.String
+      description: Nombre completo del estudiante.
+    - id: identificacion
+      type: System.String
+      description: Cédula o pasaporte.
+    - id: edad
+      type: System.Int32
+      description: Edad en años.
+    - id: carne
+      type: System.String
+      description: Identificador único universitario.
+    - id: carrera
+      type: System.String
+      description: Carrera que cursa actualmente.
+    - id: porcentajeBeca
+      type: System.Double
+      description: El porcentaje de descuento que posee.
+    content.vb: Public Sub New(nombre As String, identificacion As String, edad As Integer, carne As String, carrera As String, porcentajeBeca As Double)
+  overload: SistemaMatricula.EstudianteBecado.#ctor*
+  nameWithType.vb: EstudianteBecado.New(String, String, Integer, String, String, Double)
+  fullName.vb: SistemaMatricula.EstudianteBecado.New(String, String, Integer, String, String, Double)
+  name.vb: New(String, String, Integer, String, String, Double)
+- uid: SistemaMatricula.EstudianteBecado.CalcularPagoMatricula(System.Int32)
+  commentId: M:SistemaMatricula.EstudianteBecado.CalcularPagoMatricula(System.Int32)
+  id: CalcularPagoMatricula(System.Int32)
+  parent: SistemaMatricula.EstudianteBecado
+  langs:
+  - csharp
+  - vb
+  name: CalcularPagoMatricula(int)
+  nameWithType: EstudianteBecado.CalcularPagoMatricula(int)
+  fullName: SistemaMatricula.EstudianteBecado.CalcularPagoMatricula(int)
+  type: Method
+  source:
+    remote:
+      path: src/EstudianteBecado.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: CalcularPagoMatricula
+    path: src/EstudianteBecado.cs
+    startLine: 42
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: >-
+    Calcula el costo total de la matrícula aplicando el descuento de la beca.
+
+    Sobreescribe (override) el comportamiento original definido en la clase Estudiante.
+  example: []
+  syntax:
+    content: public override double CalcularPagoMatricula(int creditos)
+    parameters:
+    - id: creditos
+      type: System.Int32
+      description: Cantidad de créditos a matricular.
+    return:
+      type: System.Double
+      description: El costo final a pagar con el descuento ya aplicado.
+    content.vb: Public Overrides Function CalcularPagoMatricula(creditos As Integer) As Double
+  overridden: SistemaMatricula.Estudiante.CalcularPagoMatricula(System.Int32)
+  overload: SistemaMatricula.EstudianteBecado.CalcularPagoMatricula*
+  nameWithType.vb: EstudianteBecado.CalcularPagoMatricula(Integer)
+  fullName.vb: SistemaMatricula.EstudianteBecado.CalcularPagoMatricula(Integer)
+  name.vb: CalcularPagoMatricula(Integer)
+references:
+- uid: SistemaMatricula
+  commentId: N:SistemaMatricula
+  href: SistemaMatricula.html
+  name: SistemaMatricula
+  nameWithType: SistemaMatricula
+  fullName: SistemaMatricula
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SistemaMatricula.Persona
+  commentId: T:SistemaMatricula.Persona
+  parent: SistemaMatricula
+  href: SistemaMatricula.Persona.html
+  name: Persona
+  nameWithType: Persona
+  fullName: SistemaMatricula.Persona
+- uid: SistemaMatricula.Estudiante
+  commentId: T:SistemaMatricula.Estudiante
+  parent: SistemaMatricula
+  href: SistemaMatricula.Estudiante.html
+  name: Estudiante
+  nameWithType: Estudiante
+  fullName: SistemaMatricula.Estudiante
+- uid: SistemaMatricula.Estudiante.Carne
+  commentId: P:SistemaMatricula.Estudiante.Carne
+  parent: SistemaMatricula.Estudiante
+  href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_Carne
+  name: Carne
+  nameWithType: Estudiante.Carne
+  fullName: SistemaMatricula.Estudiante.Carne
+- uid: SistemaMatricula.Estudiante.Carrera
+  commentId: P:SistemaMatricula.Estudiante.Carrera
+  parent: SistemaMatricula.Estudiante
+  href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_Carrera
+  name: Carrera
+  nameWithType: Estudiante.Carrera
+  fullName: SistemaMatricula.Estudiante.Carrera
+- uid: SistemaMatricula.Estudiante.MostrarDetalles
+  commentId: M:SistemaMatricula.Estudiante.MostrarDetalles
+  parent: SistemaMatricula.Estudiante
+  href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_MostrarDetalles
+  name: MostrarDetalles()
+  nameWithType: Estudiante.MostrarDetalles()
+  fullName: SistemaMatricula.Estudiante.MostrarDetalles()
+  spec.csharp:
+  - uid: SistemaMatricula.Estudiante.MostrarDetalles
+    name: MostrarDetalles
+    href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_MostrarDetalles
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SistemaMatricula.Estudiante.MostrarDetalles
+    name: MostrarDetalles
+    href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_MostrarDetalles
+  - name: (
+  - name: )
+- uid: SistemaMatricula.Persona.Nombre
+  commentId: P:SistemaMatricula.Persona.Nombre
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_Nombre
+  name: Nombre
+  nameWithType: Persona.Nombre
+  fullName: SistemaMatricula.Persona.Nombre
+- uid: SistemaMatricula.Persona.Identificacion
+  commentId: P:SistemaMatricula.Persona.Identificacion
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_Identificacion
+  name: Identificacion
+  nameWithType: Persona.Identificacion
+  fullName: SistemaMatricula.Persona.Identificacion
+- uid: SistemaMatricula.Persona.Edad
+  commentId: P:SistemaMatricula.Persona.Edad
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_Edad
+  name: Edad
+  nameWithType: Persona.Edad
+  fullName: SistemaMatricula.Persona.Edad
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SistemaMatricula.EstudianteBecado.PorcentajeBeca*
+  commentId: Overload:SistemaMatricula.EstudianteBecado.PorcentajeBeca
+  href: SistemaMatricula.EstudianteBecado.html#SistemaMatricula_EstudianteBecado_PorcentajeBeca
+  name: PorcentajeBeca
+  nameWithType: EstudianteBecado.PorcentajeBeca
+  fullName: SistemaMatricula.EstudianteBecado.PorcentajeBeca
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: SistemaMatricula.EstudianteBecado.#ctor*
+  commentId: Overload:SistemaMatricula.EstudianteBecado.#ctor
+  href: SistemaMatricula.EstudianteBecado.html#SistemaMatricula_EstudianteBecado__ctor_System_String_System_String_System_Int32_System_String_System_String_System_Double_
+  name: EstudianteBecado
+  nameWithType: EstudianteBecado.EstudianteBecado
+  fullName: SistemaMatricula.EstudianteBecado.EstudianteBecado
+  nameWithType.vb: EstudianteBecado.New
+  fullName.vb: SistemaMatricula.EstudianteBecado.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SistemaMatricula.Estudiante.CalcularPagoMatricula(System.Int32)
+  commentId: M:SistemaMatricula.Estudiante.CalcularPagoMatricula(System.Int32)
+  parent: SistemaMatricula.Estudiante
+  isExternal: true
+  href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_CalcularPagoMatricula_System_Int32_
+  name: CalcularPagoMatricula(int)
+  nameWithType: Estudiante.CalcularPagoMatricula(int)
+  fullName: SistemaMatricula.Estudiante.CalcularPagoMatricula(int)
+  nameWithType.vb: Estudiante.CalcularPagoMatricula(Integer)
+  fullName.vb: SistemaMatricula.Estudiante.CalcularPagoMatricula(Integer)
+  name.vb: CalcularPagoMatricula(Integer)
+  spec.csharp:
+  - uid: SistemaMatricula.Estudiante.CalcularPagoMatricula(System.Int32)
+    name: CalcularPagoMatricula
+    href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_CalcularPagoMatricula_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SistemaMatricula.Estudiante.CalcularPagoMatricula(System.Int32)
+    name: CalcularPagoMatricula
+    href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_CalcularPagoMatricula_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SistemaMatricula.EstudianteBecado.CalcularPagoMatricula*
+  commentId: Overload:SistemaMatricula.EstudianteBecado.CalcularPagoMatricula
+  href: SistemaMatricula.EstudianteBecado.html#SistemaMatricula_EstudianteBecado_CalcularPagoMatricula_System_Int32_
+  name: CalcularPagoMatricula
+  nameWithType: EstudianteBecado.CalcularPagoMatricula
+  fullName: SistemaMatricula.EstudianteBecado.CalcularPagoMatricula

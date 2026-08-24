@@ -1,19 +1,28 @@
 ### YamlMime:TableOfContent
 items:
-- uid: src
-  name: src
+- uid: SistemaMatricula
+  name: SistemaMatricula
   type: Namespace
   items:
-  - uid: src.Estudiante
+  - uid: SistemaMatricula.Curso
+    name: Curso
+    type: Class
+  - uid: SistemaMatricula.Estudiante
     name: Estudiante
     type: Class
-  - uid: src.EstudianteBecado
+  - uid: SistemaMatricula.EstudianteBecado
     name: EstudianteBecado
     type: Class
-  - uid: src.Persona
+  - uid: SistemaMatricula.Horario
+    name: Horario
+    type: Class
+  - uid: SistemaMatricula.Matricula
+    name: Matricula
+    type: Class
+  - uid: SistemaMatricula.Persona
     name: Persona
     type: Class
-  - uid: src.Profesor
+  - uid: SistemaMatricula.Profesor
     name: Profesor
     type: Class
 memberLayout: SamePage

@@ -1,21 +1,21 @@
 ### YamlMime:ManagedReference
 items:
-- uid: src.Estudiante
-  commentId: T:src.Estudiante
+- uid: SistemaMatricula.Estudiante
+  commentId: T:SistemaMatricula.Estudiante
   id: Estudiante
-  parent: src
+  parent: SistemaMatricula
   children:
-  - src.Estudiante.#ctor(System.String,System.String,System.Int32,System.String,System.String)
-  - src.Estudiante.CalcularPagoMatricula(System.Int32)
-  - src.Estudiante.Carne
-  - src.Estudiante.Carrera
-  - src.Estudiante.MostrarDetalles
+  - SistemaMatricula.Estudiante.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  - SistemaMatricula.Estudiante.CalcularPagoMatricula(System.Int32)
+  - SistemaMatricula.Estudiante.Carne
+  - SistemaMatricula.Estudiante.Carrera
+  - SistemaMatricula.Estudiante.MostrarDetalles
   langs:
   - csharp
   - vb
   name: Estudiante
   nameWithType: Estudiante
-  fullName: src.Estudiante
+  fullName: SistemaMatricula.Estudiante
   type: Class
   source:
     remote:
@@ -27,7 +27,7 @@ items:
     startLine: 9
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
     Representa a un estudiante regular de la universidad.
 
@@ -40,13 +40,13 @@ items:
     content.vb: Public Class Estudiante Inherits Persona
   inheritance:
   - System.Object
-  - src.Persona
+  - SistemaMatricula.Persona
   derivedClasses:
-  - src.EstudianteBecado
+  - SistemaMatricula.EstudianteBecado
   inheritedMembers:
-  - src.Persona.Nombre
-  - src.Persona.Identificacion
-  - src.Persona.Edad
+  - SistemaMatricula.Persona.Nombre
+  - SistemaMatricula.Persona.Identificacion
+  - SistemaMatricula.Persona.Edad
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -54,16 +54,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: src.Estudiante.Carne
-  commentId: P:src.Estudiante.Carne
+- uid: SistemaMatricula.Estudiante.Carne
+  commentId: P:SistemaMatricula.Estudiante.Carne
   id: Carne
-  parent: src.Estudiante
+  parent: SistemaMatricula.Estudiante
   langs:
   - csharp
   - vb
   name: Carne
   nameWithType: Estudiante.Carne
-  fullName: src.Estudiante.Carne
+  fullName: SistemaMatricula.Estudiante.Carne
   type: Property
   source:
     remote:
@@ -75,7 +75,7 @@ items:
     startLine: 14
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: Identificador único universitario del estudiante.
   example: []
   syntax:
@@ -84,17 +84,17 @@ items:
     return:
       type: System.String
     content.vb: Public Property Carne As String
-  overload: src.Estudiante.Carne*
-- uid: src.Estudiante.Carrera
-  commentId: P:src.Estudiante.Carrera
+  overload: SistemaMatricula.Estudiante.Carne*
+- uid: SistemaMatricula.Estudiante.Carrera
+  commentId: P:SistemaMatricula.Estudiante.Carrera
   id: Carrera
-  parent: src.Estudiante
+  parent: SistemaMatricula.Estudiante
   langs:
   - csharp
   - vb
   name: Carrera
   nameWithType: Estudiante.Carrera
-  fullName: src.Estudiante.Carrera
+  fullName: SistemaMatricula.Estudiante.Carrera
   type: Property
   source:
     remote:
@@ -106,7 +106,7 @@ items:
     startLine: 19
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: Nombre de la carrera que está cursando actualmente.
   example: []
   syntax:
@@ -115,17 +115,17 @@ items:
     return:
       type: System.String
     content.vb: Public Property Carrera As String
-  overload: src.Estudiante.Carrera*
-- uid: src.Estudiante.#ctor(System.String,System.String,System.Int32,System.String,System.String)
-  commentId: M:src.Estudiante.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  overload: SistemaMatricula.Estudiante.Carrera*
+- uid: SistemaMatricula.Estudiante.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  commentId: M:SistemaMatricula.Estudiante.#ctor(System.String,System.String,System.Int32,System.String,System.String)
   id: '#ctor(System.String,System.String,System.Int32,System.String,System.String)'
-  parent: src.Estudiante
+  parent: SistemaMatricula.Estudiante
   langs:
   - csharp
   - vb
   name: Estudiante(string, string, int, string, string)
   nameWithType: Estudiante.Estudiante(string, string, int, string, string)
-  fullName: src.Estudiante.Estudiante(string, string, int, string, string)
+  fullName: SistemaMatricula.Estudiante.Estudiante(string, string, int, string, string)
   type: Constructor
   source:
     remote:
@@ -137,7 +137,7 @@ items:
     startLine: 30
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
     Inicializa un nuevo estudiante. Note cómo usa 'base(...)' para enviar 
 
@@ -162,20 +162,20 @@ items:
       type: System.String
       description: La carrera matriculada.
     content.vb: Public Sub New(nombre As String, identificacion As String, edad As Integer, carne As String, carrera As String)
-  overload: src.Estudiante.#ctor*
+  overload: SistemaMatricula.Estudiante.#ctor*
   nameWithType.vb: Estudiante.New(String, String, Integer, String, String)
-  fullName.vb: src.Estudiante.New(String, String, Integer, String, String)
+  fullName.vb: SistemaMatricula.Estudiante.New(String, String, Integer, String, String)
   name.vb: New(String, String, Integer, String, String)
-- uid: src.Estudiante.MostrarDetalles
-  commentId: M:src.Estudiante.MostrarDetalles
+- uid: SistemaMatricula.Estudiante.MostrarDetalles
+  commentId: M:SistemaMatricula.Estudiante.MostrarDetalles
   id: MostrarDetalles
-  parent: src.Estudiante
+  parent: SistemaMatricula.Estudiante
   langs:
   - csharp
   - vb
   name: MostrarDetalles()
   nameWithType: Estudiante.MostrarDetalles()
-  fullName: src.Estudiante.MostrarDetalles()
+  fullName: SistemaMatricula.Estudiante.MostrarDetalles()
   type: Method
   source:
     remote:
@@ -187,7 +187,7 @@ items:
     startLine: 41
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
     Imprime en pantalla los datos específicos del estudiante.
 
@@ -196,18 +196,18 @@ items:
   syntax:
     content: public override void MostrarDetalles()
     content.vb: Public Overrides Sub MostrarDetalles()
-  overridden: src.Persona.MostrarDetalles
-  overload: src.Estudiante.MostrarDetalles*
-- uid: src.Estudiante.CalcularPagoMatricula(System.Int32)
-  commentId: M:src.Estudiante.CalcularPagoMatricula(System.Int32)
+  overridden: SistemaMatricula.Persona.MostrarDetalles
+  overload: SistemaMatricula.Estudiante.MostrarDetalles*
+- uid: SistemaMatricula.Estudiante.CalcularPagoMatricula(System.Int32)
+  commentId: M:SistemaMatricula.Estudiante.CalcularPagoMatricula(System.Int32)
   id: CalcularPagoMatricula(System.Int32)
-  parent: src.Estudiante
+  parent: SistemaMatricula.Estudiante
   langs:
   - csharp
   - vb
   name: CalcularPagoMatricula(int)
   nameWithType: Estudiante.CalcularPagoMatricula(int)
-  fullName: src.Estudiante.CalcularPagoMatricula(int)
+  fullName: SistemaMatricula.Estudiante.CalcularPagoMatricula(int)
   type: Method
   source:
     remote:
@@ -219,7 +219,7 @@ items:
     startLine: 53
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
     Calcula el costo total de los cursos a matricular.
 
@@ -237,17 +237,17 @@ items:
       type: System.Double
       description: Costo base de la matrícula.
     content.vb: Public Overridable Function CalcularPagoMatricula(creditos As Integer) As Double
-  overload: src.Estudiante.CalcularPagoMatricula*
+  overload: SistemaMatricula.Estudiante.CalcularPagoMatricula*
   nameWithType.vb: Estudiante.CalcularPagoMatricula(Integer)
-  fullName.vb: src.Estudiante.CalcularPagoMatricula(Integer)
+  fullName.vb: SistemaMatricula.Estudiante.CalcularPagoMatricula(Integer)
   name.vb: CalcularPagoMatricula(Integer)
 references:
-- uid: src
-  commentId: N:src
-  href: src.html
-  name: src
-  nameWithType: src
-  fullName: src
+- uid: SistemaMatricula
+  commentId: N:SistemaMatricula
+  href: SistemaMatricula.html
+  name: SistemaMatricula
+  nameWithType: SistemaMatricula
+  fullName: SistemaMatricula
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -259,34 +259,34 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: src.Persona
-  commentId: T:src.Persona
-  parent: src
-  href: src.Persona.html
+- uid: SistemaMatricula.Persona
+  commentId: T:SistemaMatricula.Persona
+  parent: SistemaMatricula
+  href: SistemaMatricula.Persona.html
   name: Persona
   nameWithType: Persona
-  fullName: src.Persona
-- uid: src.Persona.Nombre
-  commentId: P:src.Persona.Nombre
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_Nombre
+  fullName: SistemaMatricula.Persona
+- uid: SistemaMatricula.Persona.Nombre
+  commentId: P:SistemaMatricula.Persona.Nombre
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_Nombre
   name: Nombre
   nameWithType: Persona.Nombre
-  fullName: src.Persona.Nombre
-- uid: src.Persona.Identificacion
-  commentId: P:src.Persona.Identificacion
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_Identificacion
+  fullName: SistemaMatricula.Persona.Nombre
+- uid: SistemaMatricula.Persona.Identificacion
+  commentId: P:SistemaMatricula.Persona.Identificacion
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_Identificacion
   name: Identificacion
   nameWithType: Persona.Identificacion
-  fullName: src.Persona.Identificacion
-- uid: src.Persona.Edad
-  commentId: P:src.Persona.Edad
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_Edad
+  fullName: SistemaMatricula.Persona.Identificacion
+- uid: SistemaMatricula.Persona.Edad
+  commentId: P:SistemaMatricula.Persona.Edad
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_Edad
   name: Edad
   nameWithType: Persona.Edad
-  fullName: src.Persona.Edad
+  fullName: SistemaMatricula.Persona.Edad
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -513,12 +513,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: src.Estudiante.Carne*
-  commentId: Overload:src.Estudiante.Carne
-  href: src.Estudiante.html#src_Estudiante_Carne
+- uid: SistemaMatricula.Estudiante.Carne*
+  commentId: Overload:SistemaMatricula.Estudiante.Carne
+  href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_Carne
   name: Carne
   nameWithType: Estudiante.Carne
-  fullName: src.Estudiante.Carne
+  fullName: SistemaMatricula.Estudiante.Carne
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -530,20 +530,20 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: src.Estudiante.Carrera*
-  commentId: Overload:src.Estudiante.Carrera
-  href: src.Estudiante.html#src_Estudiante_Carrera
+- uid: SistemaMatricula.Estudiante.Carrera*
+  commentId: Overload:SistemaMatricula.Estudiante.Carrera
+  href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_Carrera
   name: Carrera
   nameWithType: Estudiante.Carrera
-  fullName: src.Estudiante.Carrera
-- uid: src.Estudiante.#ctor*
-  commentId: Overload:src.Estudiante.#ctor
-  href: src.Estudiante.html#src_Estudiante__ctor_System_String_System_String_System_Int32_System_String_System_String_
+  fullName: SistemaMatricula.Estudiante.Carrera
+- uid: SistemaMatricula.Estudiante.#ctor*
+  commentId: Overload:SistemaMatricula.Estudiante.#ctor
+  href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante__ctor_System_String_System_String_System_Int32_System_String_System_String_
   name: Estudiante
   nameWithType: Estudiante.Estudiante
-  fullName: src.Estudiante.Estudiante
+  fullName: SistemaMatricula.Estudiante.Estudiante
   nameWithType.vb: Estudiante.New
-  fullName.vb: src.Estudiante.New
+  fullName.vb: SistemaMatricula.Estudiante.New
   name.vb: New
 - uid: System.Int32
   commentId: T:System.Int32
@@ -556,37 +556,37 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: src.Persona.MostrarDetalles
-  commentId: M:src.Persona.MostrarDetalles
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_MostrarDetalles
+- uid: SistemaMatricula.Persona.MostrarDetalles
+  commentId: M:SistemaMatricula.Persona.MostrarDetalles
+  parent: SistemaMatricula.Persona
+  href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_MostrarDetalles
   name: MostrarDetalles()
   nameWithType: Persona.MostrarDetalles()
-  fullName: src.Persona.MostrarDetalles()
+  fullName: SistemaMatricula.Persona.MostrarDetalles()
   spec.csharp:
-  - uid: src.Persona.MostrarDetalles
+  - uid: SistemaMatricula.Persona.MostrarDetalles
     name: MostrarDetalles
-    href: src.Persona.html#src_Persona_MostrarDetalles
+    href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_MostrarDetalles
   - name: (
   - name: )
   spec.vb:
-  - uid: src.Persona.MostrarDetalles
+  - uid: SistemaMatricula.Persona.MostrarDetalles
     name: MostrarDetalles
-    href: src.Persona.html#src_Persona_MostrarDetalles
+    href: SistemaMatricula.Persona.html#SistemaMatricula_Persona_MostrarDetalles
   - name: (
   - name: )
-- uid: src.Estudiante.MostrarDetalles*
-  commentId: Overload:src.Estudiante.MostrarDetalles
-  href: src.Estudiante.html#src_Estudiante_MostrarDetalles
+- uid: SistemaMatricula.Estudiante.MostrarDetalles*
+  commentId: Overload:SistemaMatricula.Estudiante.MostrarDetalles
+  href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_MostrarDetalles
   name: MostrarDetalles
   nameWithType: Estudiante.MostrarDetalles
-  fullName: src.Estudiante.MostrarDetalles
-- uid: src.Estudiante.CalcularPagoMatricula*
-  commentId: Overload:src.Estudiante.CalcularPagoMatricula
-  href: src.Estudiante.html#src_Estudiante_CalcularPagoMatricula_System_Int32_
+  fullName: SistemaMatricula.Estudiante.MostrarDetalles
+- uid: SistemaMatricula.Estudiante.CalcularPagoMatricula*
+  commentId: Overload:SistemaMatricula.Estudiante.CalcularPagoMatricula
+  href: SistemaMatricula.Estudiante.html#SistemaMatricula_Estudiante_CalcularPagoMatricula_System_Int32_
   name: CalcularPagoMatricula
   nameWithType: Estudiante.CalcularPagoMatricula
-  fullName: src.Estudiante.CalcularPagoMatricula
+  fullName: SistemaMatricula.Estudiante.CalcularPagoMatricula
 - uid: System.Double
   commentId: T:System.Double
   parent: System

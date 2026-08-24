@@ -1,50 +1,40 @@
 ### YamlMime:ManagedReference
 items:
-- uid: src.Persona
-  commentId: T:src.Persona
-  id: Persona
-  parent: src
+- uid: SistemaMatricula.Matricula
+  commentId: T:SistemaMatricula.Matricula
+  id: Matricula
+  parent: SistemaMatricula
   children:
-  - src.Persona.#ctor(System.String,System.String,System.Int32)
-  - src.Persona.Edad
-  - src.Persona.Identificacion
-  - src.Persona.MostrarDetalles
-  - src.Persona.Nombre
+  - SistemaMatricula.Matricula.#ctor
+  - SistemaMatricula.Matricula.Matricular(SistemaMatricula.Curso,SistemaMatricula.Estudiante)
   langs:
   - csharp
   - vb
-  name: Persona
-  nameWithType: Persona
-  fullName: src.Persona
+  name: Matricula
+  nameWithType: Matricula
+  fullName: SistemaMatricula.Matricula
   type: Class
   source:
     remote:
-      path: src/Persona.cs
+      path: src/Matricula.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: Persona
-    path: src/Persona.cs
-    startLine: 10
+    id: Matricula
+    path: src/Matricula.cs
+    startLine: 9
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
-    Abstracción y Clase.
+    Gestiona el proceso de inscripción de los estudiantes a los cursos.
 
-    Es el "molde genérico" para cualquier individuo en la universidad.
-
-    Al ser 'abstract', el sistema no permite crear objetos directos de ella 
-
-    (nadie es "solo una persona" en el sistema, debe tener un rol).
+    Es la clase ideal para explicar el concepto de ENCAPSULAMIENTO.
   example: []
   syntax:
-    content: public abstract class Persona
-    content.vb: Public MustInherit Class Persona
+    content: public class Matricula
+    content.vb: Public Class Matricula
   inheritance:
   - System.Object
-  derivedClasses:
-  - src.Estudiante
-  - src.Profesor
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -53,181 +43,84 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: src.Persona.Nombre
-  commentId: P:src.Persona.Nombre
-  id: Nombre
-  parent: src.Persona
+- uid: SistemaMatricula.Matricula.#ctor
+  commentId: M:SistemaMatricula.Matricula.#ctor
+  id: '#ctor'
+  parent: SistemaMatricula.Matricula
   langs:
   - csharp
   - vb
-  name: Nombre
-  nameWithType: Persona.Nombre
-  fullName: src.Persona.Nombre
-  type: Property
-  source:
-    remote:
-      path: src/Persona.cs
-      branch: feature/system
-      repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: Nombre
-    path: src/Persona.cs
-    startLine: 15
-  assemblies:
-  - SistemaMatricula
-  namespace: src
-  summary: Nombre completo del individuo.
-  example: []
-  syntax:
-    content: public string Nombre { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Nombre As String
-  overload: src.Persona.Nombre*
-- uid: src.Persona.Identificacion
-  commentId: P:src.Persona.Identificacion
-  id: Identificacion
-  parent: src.Persona
-  langs:
-  - csharp
-  - vb
-  name: Identificacion
-  nameWithType: Persona.Identificacion
-  fullName: src.Persona.Identificacion
-  type: Property
-  source:
-    remote:
-      path: src/Persona.cs
-      branch: feature/system
-      repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: Identificacion
-    path: src/Persona.cs
-    startLine: 20
-  assemblies:
-  - SistemaMatricula
-  namespace: src
-  summary: Documento de identidad.
-  example: []
-  syntax:
-    content: public string Identificacion { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Identificacion As String
-  overload: src.Persona.Identificacion*
-- uid: src.Persona.Edad
-  commentId: P:src.Persona.Edad
-  id: Edad
-  parent: src.Persona
-  langs:
-  - csharp
-  - vb
-  name: Edad
-  nameWithType: Persona.Edad
-  fullName: src.Persona.Edad
-  type: Property
-  source:
-    remote:
-      path: src/Persona.cs
-      branch: feature/system
-      repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: Edad
-    path: src/Persona.cs
-    startLine: 26
-  assemblies:
-  - SistemaMatricula
-  namespace: src
-  summary: >-
-    Edad en años. 
-
-    Demuestra el tipo de dato 'int' para números enteros
-  example: []
-  syntax:
-    content: public int Edad { get; set; }
-    parameters: []
-    return:
-      type: System.Int32
-    content.vb: Public Property Edad As Integer
-  overload: src.Persona.Edad*
-- uid: src.Persona.#ctor(System.String,System.String,System.Int32)
-  commentId: M:src.Persona.#ctor(System.String,System.String,System.Int32)
-  id: '#ctor(System.String,System.String,System.Int32)'
-  parent: src.Persona
-  langs:
-  - csharp
-  - vb
-  name: Persona(string, string, int)
-  nameWithType: Persona.Persona(string, string, int)
-  fullName: src.Persona.Persona(string, string, int)
+  name: Matricula()
+  nameWithType: Matricula.Matricula()
+  fullName: SistemaMatricula.Matricula.Matricula()
   type: Constructor
   source:
     remote:
-      path: src/Persona.cs
+      path: src/Matricula.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
     id: .ctor
-    path: src/Persona.cs
-    startLine: 34
+    path: src/Matricula.cs
+    startLine: 21
   assemblies:
   - SistemaMatricula
-  namespace: src
-  summary: Constructor que inicializa los datos básicos que toda persona debe tener.
+  namespace: SistemaMatricula
+  summary: Constructor que inicializa la lista vacía para que esté lista para usarse.
   example: []
   syntax:
-    content: public Persona(string nombre, string identificacion, int edad)
-    parameters:
-    - id: nombre
-      type: System.String
-      description: Nombre completo.
-    - id: identificacion
-      type: System.String
-      description: Cédula o pasaporte.
-    - id: edad
-      type: System.Int32
-      description: Edad actual.
-    content.vb: Public Sub New(nombre As String, identificacion As String, edad As Integer)
-  overload: src.Persona.#ctor*
-  nameWithType.vb: Persona.New(String, String, Integer)
-  fullName.vb: src.Persona.New(String, String, Integer)
-  name.vb: New(String, String, Integer)
-- uid: src.Persona.MostrarDetalles
-  commentId: M:src.Persona.MostrarDetalles
-  id: MostrarDetalles
-  parent: src.Persona
+    content: public Matricula()
+    content.vb: Public Sub New()
+  overload: SistemaMatricula.Matricula.#ctor*
+  nameWithType.vb: Matricula.New()
+  fullName.vb: SistemaMatricula.Matricula.New()
+  name.vb: New()
+- uid: SistemaMatricula.Matricula.Matricular(SistemaMatricula.Curso,SistemaMatricula.Estudiante)
+  commentId: M:SistemaMatricula.Matricula.Matricular(SistemaMatricula.Curso,SistemaMatricula.Estudiante)
+  id: Matricular(SistemaMatricula.Curso,SistemaMatricula.Estudiante)
+  parent: SistemaMatricula.Matricula
   langs:
   - csharp
   - vb
-  name: MostrarDetalles()
-  nameWithType: Persona.MostrarDetalles()
-  fullName: src.Persona.MostrarDetalles()
+  name: Matricular(Curso, Estudiante)
+  nameWithType: Matricula.Matricular(Curso, Estudiante)
+  fullName: SistemaMatricula.Matricula.Matricular(SistemaMatricula.Curso, SistemaMatricula.Estudiante)
   type: Method
   source:
     remote:
-      path: src/Persona.cs
+      path: src/Matricula.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: MostrarDetalles
-    path: src/Persona.cs
-    startLine: 45
+    id: Matricular
+    path: src/Matricula.cs
+    startLine: 33
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
-    Método abstracto que obliga a las clases hijas
+    MÉTODO PÚBLICO:
 
-    a definir cómo mostrar sus propios detalles.
+    Es la única "puerta de entrada" permitida para modificar la lista privada. 
+
+    Antes de agregar un curso, verifica las reglas del negocio (ej. si hay cupo).
   example: []
   syntax:
-    content: public abstract void MostrarDetalles()
-    content.vb: Public MustOverride Sub MostrarDetalles()
-  overload: src.Persona.MostrarDetalles*
+    content: public void Matricular(Curso nuevoCurso, Estudiante estudiante)
+    parameters:
+    - id: nuevoCurso
+      type: SistemaMatricula.Curso
+      description: El curso que el estudiante desea matricular.
+    - id: estudiante
+      type: SistemaMatricula.Estudiante
+      description: El estudiante que está haciendo el trámite.
+    content.vb: Public Sub Matricular(nuevoCurso As Curso, estudiante As Estudiante)
+  overload: SistemaMatricula.Matricula.Matricular*
 references:
-- uid: src
-  commentId: N:src
-  href: src.html
-  name: src
-  nameWithType: src
-  fullName: src
+- uid: SistemaMatricula
+  commentId: N:SistemaMatricula
+  href: SistemaMatricula.html
+  name: SistemaMatricula
+  nameWithType: SistemaMatricula
+  fullName: SistemaMatricula
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -465,58 +358,32 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: src.Persona.Nombre*
-  commentId: Overload:src.Persona.Nombre
-  href: src.Persona.html#src_Persona_Nombre
-  name: Nombre
-  nameWithType: Persona.Nombre
-  fullName: src.Persona.Nombre
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: src.Persona.Identificacion*
-  commentId: Overload:src.Persona.Identificacion
-  href: src.Persona.html#src_Persona_Identificacion
-  name: Identificacion
-  nameWithType: Persona.Identificacion
-  fullName: src.Persona.Identificacion
-- uid: src.Persona.Edad*
-  commentId: Overload:src.Persona.Edad
-  href: src.Persona.html#src_Persona_Edad
-  name: Edad
-  nameWithType: Persona.Edad
-  fullName: src.Persona.Edad
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: src.Persona.#ctor*
-  commentId: Overload:src.Persona.#ctor
-  href: src.Persona.html#src_Persona__ctor_System_String_System_String_System_Int32_
-  name: Persona
-  nameWithType: Persona.Persona
-  fullName: src.Persona.Persona
-  nameWithType.vb: Persona.New
-  fullName.vb: src.Persona.New
+- uid: SistemaMatricula.Matricula.#ctor*
+  commentId: Overload:SistemaMatricula.Matricula.#ctor
+  href: SistemaMatricula.Matricula.html#SistemaMatricula_Matricula__ctor
+  name: Matricula
+  nameWithType: Matricula.Matricula
+  fullName: SistemaMatricula.Matricula.Matricula
+  nameWithType.vb: Matricula.New
+  fullName.vb: SistemaMatricula.Matricula.New
   name.vb: New
-- uid: src.Persona.MostrarDetalles*
-  commentId: Overload:src.Persona.MostrarDetalles
-  href: src.Persona.html#src_Persona_MostrarDetalles
-  name: MostrarDetalles
-  nameWithType: Persona.MostrarDetalles
-  fullName: src.Persona.MostrarDetalles
+- uid: SistemaMatricula.Matricula.Matricular*
+  commentId: Overload:SistemaMatricula.Matricula.Matricular
+  href: SistemaMatricula.Matricula.html#SistemaMatricula_Matricula_Matricular_SistemaMatricula_Curso_SistemaMatricula_Estudiante_
+  name: Matricular
+  nameWithType: Matricula.Matricular
+  fullName: SistemaMatricula.Matricula.Matricular
+- uid: SistemaMatricula.Curso
+  commentId: T:SistemaMatricula.Curso
+  parent: SistemaMatricula
+  href: SistemaMatricula.Curso.html
+  name: Curso
+  nameWithType: Curso
+  fullName: SistemaMatricula.Curso
+- uid: SistemaMatricula.Estudiante
+  commentId: T:SistemaMatricula.Estudiante
+  parent: SistemaMatricula
+  href: SistemaMatricula.Estudiante.html
+  name: Estudiante
+  nameWithType: Estudiante
+  fullName: SistemaMatricula.Estudiante

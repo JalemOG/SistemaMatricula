@@ -1,49 +1,45 @@
 ### YamlMime:ManagedReference
 items:
-- uid: src.Profesor
-  commentId: T:src.Profesor
-  id: Profesor
-  parent: src
+- uid: SistemaMatricula.Horario
+  commentId: T:SistemaMatricula.Horario
+  id: Horario
+  parent: SistemaMatricula
   children:
-  - src.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
-  - src.Profesor.Especialidad
-  - src.Profesor.MostrarDetalles
-  - src.Profesor.SalarioBase
+  - SistemaMatricula.Horario.#ctor(System.String,System.Int32,System.Int32,System.String)
+  - SistemaMatricula.Horario.Aula
+  - SistemaMatricula.Horario.DiaSemana
+  - SistemaMatricula.Horario.HoraFin
+  - SistemaMatricula.Horario.HoraInicio
+  - SistemaMatricula.Horario.ObtenerFormatoHorario
   langs:
   - csharp
   - vb
-  name: Profesor
-  nameWithType: Profesor
-  fullName: src.Profesor
+  name: Horario
+  nameWithType: Horario
+  fullName: SistemaMatricula.Horario
   type: Class
   source:
     remote:
-      path: src/Profesor.cs
+      path: src/Horario.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: Profesor
-    path: src/Profesor.cs
-    startLine: 9
+    id: Horario
+    path: src/Horario.cs
+    startLine: 8
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
-    Representa a un docente dentro de la universidad. 
+    Representa el bloque de tiempo y espacio donde se imparte una clase.
 
-    Esta clase hereda de Persona, demostrando cómo reutilizar el código base 
-
-    para crear un rol completamente distinto al del estudiante.
+    Es perfecta para explicar los Tipos de Datos.
   example: []
   syntax:
-    content: 'public class Profesor : Persona'
-    content.vb: Public Class Profesor Inherits Persona
+    content: public class Horario
+    content.vb: Public Class Horario
   inheritance:
   - System.Object
-  - src.Persona
   inheritedMembers:
-  - src.Persona.Nombre
-  - src.Persona.Identificacion
-  - src.Persona.Edad
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -51,157 +47,217 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: src.Profesor.Especialidad
-  commentId: P:src.Profesor.Especialidad
-  id: Especialidad
-  parent: src.Profesor
+- uid: SistemaMatricula.Horario.DiaSemana
+  commentId: P:SistemaMatricula.Horario.DiaSemana
+  id: DiaSemana
+  parent: SistemaMatricula.Horario
   langs:
   - csharp
   - vb
-  name: Especialidad
-  nameWithType: Profesor.Especialidad
-  fullName: src.Profesor.Especialidad
+  name: DiaSemana
+  nameWithType: Horario.DiaSemana
+  fullName: SistemaMatricula.Horario.DiaSemana
   type: Property
   source:
     remote:
-      path: src/Profesor.cs
+      path: src/Horario.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: Especialidad
-    path: src/Profesor.cs
+    id: DiaSemana
+    path: src/Horario.cs
     startLine: 14
   assemblies:
   - SistemaMatricula
-  namespace: src
-  summary: Área de conocimiento del profesor (ej. "Ingeniería en Computadores", "Matemática").
+  namespace: SistemaMatricula
+  summary: >-
+    El día de la semana (ej. "Lunes"). 
+
+    Demuestra el uso del tipo de dato 'string' para cadenas de texto.
   example: []
   syntax:
-    content: public string Especialidad { get; set; }
+    content: public string DiaSemana { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public Property Especialidad As String
-  overload: src.Profesor.Especialidad*
-- uid: src.Profesor.SalarioBase
-  commentId: P:src.Profesor.SalarioBase
-  id: SalarioBase
-  parent: src.Profesor
+    content.vb: Public Property DiaSemana As String
+  overload: SistemaMatricula.Horario.DiaSemana*
+- uid: SistemaMatricula.Horario.HoraInicio
+  commentId: P:SistemaMatricula.Horario.HoraInicio
+  id: HoraInicio
+  parent: SistemaMatricula.Horario
   langs:
   - csharp
   - vb
-  name: SalarioBase
-  nameWithType: Profesor.SalarioBase
-  fullName: src.Profesor.SalarioBase
+  name: HoraInicio
+  nameWithType: Horario.HoraInicio
+  fullName: SistemaMatricula.Horario.HoraInicio
   type: Property
   source:
     remote:
-      path: src/Profesor.cs
+      path: src/Horario.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: SalarioBase
-    path: src/Profesor.cs
+    id: HoraInicio
+    path: src/Horario.cs
     startLine: 20
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
-    El salario base asignado al profesor. 
+    La hora de inicio (formato 24h). 
 
-    Demuestra el uso del tipo de dato 'double' ideal para manejar dinero y decimales.
+    Demuestra el uso del tipo de dato 'int' para números enteros.
   example: []
   syntax:
-    content: public double SalarioBase { get; set; }
+    content: public int HoraInicio { get; set; }
     parameters: []
     return:
-      type: System.Double
-    content.vb: Public Property SalarioBase As Double
-  overload: src.Profesor.SalarioBase*
-- uid: src.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
-  commentId: M:src.Profesor.#ctor(System.String,System.String,System.Int32,System.String,System.Double)
-  id: '#ctor(System.String,System.String,System.Int32,System.String,System.Double)'
-  parent: src.Profesor
+      type: System.Int32
+    content.vb: Public Property HoraInicio As Integer
+  overload: SistemaMatricula.Horario.HoraInicio*
+- uid: SistemaMatricula.Horario.HoraFin
+  commentId: P:SistemaMatricula.Horario.HoraFin
+  id: HoraFin
+  parent: SistemaMatricula.Horario
   langs:
   - csharp
   - vb
-  name: Profesor(string, string, int, string, double)
-  nameWithType: Profesor.Profesor(string, string, int, string, double)
-  fullName: src.Profesor.Profesor(string, string, int, string, double)
-  type: Constructor
+  name: HoraFin
+  nameWithType: Horario.HoraFin
+  fullName: SistemaMatricula.Horario.HoraFin
+  type: Property
   source:
     remote:
-      path: src/Profesor.cs
+      path: src/Horario.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: .ctor
-    path: src/Profesor.cs
+    id: HoraFin
+    path: src/Horario.cs
+    startLine: 25
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: La hora de finalización (formato 24h).
+  example: []
+  syntax:
+    content: public int HoraFin { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property HoraFin As Integer
+  overload: SistemaMatricula.Horario.HoraFin*
+- uid: SistemaMatricula.Horario.Aula
+  commentId: P:SistemaMatricula.Horario.Aula
+  id: Aula
+  parent: SistemaMatricula.Horario
+  langs:
+  - csharp
+  - vb
+  name: Aula
+  nameWithType: Horario.Aula
+  fullName: SistemaMatricula.Horario.Aula
+  type: Property
+  source:
+    remote:
+      path: src/Horario.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: Aula
+    path: src/Horario.cs
     startLine: 30
   assemblies:
   - SistemaMatricula
-  namespace: src
-  summary: Inicializa un nuevo objeto de tipo Profesor.
+  namespace: SistemaMatricula
+  summary: El aula física asignada.
   example: []
   syntax:
-    content: public Profesor(string nombre, string identificacion, int edad, string especialidad, double salarioBase)
-    parameters:
-    - id: nombre
+    content: public string Aula { get; set; }
+    parameters: []
+    return:
       type: System.String
-      description: Nombre completo del docente.
-    - id: identificacion
-      type: System.String
-      description: Cédula o pasaporte del docente.
-    - id: edad
-      type: System.Int32
-      description: Edad en años.
-    - id: especialidad
-      type: System.String
-      description: El área académica en la que es experto.
-    - id: salarioBase
-      type: System.Double
-      description: Monto salarial de referencia.
-    content.vb: Public Sub New(nombre As String, identificacion As String, edad As Integer, especialidad As String, salarioBase As Double)
-  overload: src.Profesor.#ctor*
-  nameWithType.vb: Profesor.New(String, String, Integer, String, Double)
-  fullName.vb: src.Profesor.New(String, String, Integer, String, Double)
-  name.vb: New(String, String, Integer, String, Double)
-- uid: src.Profesor.MostrarDetalles
-  commentId: M:src.Profesor.MostrarDetalles
-  id: MostrarDetalles
-  parent: src.Profesor
+    content.vb: Public Property Aula As String
+  overload: SistemaMatricula.Horario.Aula*
+- uid: SistemaMatricula.Horario.#ctor(System.String,System.Int32,System.Int32,System.String)
+  commentId: M:SistemaMatricula.Horario.#ctor(System.String,System.Int32,System.Int32,System.String)
+  id: '#ctor(System.String,System.Int32,System.Int32,System.String)'
+  parent: SistemaMatricula.Horario
   langs:
   - csharp
   - vb
-  name: MostrarDetalles()
-  nameWithType: Profesor.MostrarDetalles()
-  fullName: src.Profesor.MostrarDetalles()
+  name: Horario(string, int, int, string)
+  nameWithType: Horario.Horario(string, int, int, string)
+  fullName: SistemaMatricula.Horario.Horario(string, int, int, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Horario.cs
+      branch: feature/system
+      repo: https://github.com/JalemOG/SistemaMatricula.git
+    id: .ctor
+    path: src/Horario.cs
+    startLine: 35
+  assemblies:
+  - SistemaMatricula
+  namespace: SistemaMatricula
+  summary: 'Constructor: Construye el evento en el calendario.'
+  example: []
+  syntax:
+    content: public Horario(string diaSemana, int horaInicio, int horaFin, string aula)
+    parameters:
+    - id: diaSemana
+      type: System.String
+    - id: horaInicio
+      type: System.Int32
+    - id: horaFin
+      type: System.Int32
+    - id: aula
+      type: System.String
+    content.vb: Public Sub New(diaSemana As String, horaInicio As Integer, horaFin As Integer, aula As String)
+  overload: SistemaMatricula.Horario.#ctor*
+  nameWithType.vb: Horario.New(String, Integer, Integer, String)
+  fullName.vb: SistemaMatricula.Horario.New(String, Integer, Integer, String)
+  name.vb: New(String, Integer, Integer, String)
+- uid: SistemaMatricula.Horario.ObtenerFormatoHorario
+  commentId: M:SistemaMatricula.Horario.ObtenerFormatoHorario
+  id: ObtenerFormatoHorario
+  parent: SistemaMatricula.Horario
+  langs:
+  - csharp
+  - vb
+  name: ObtenerFormatoHorario()
+  nameWithType: Horario.ObtenerFormatoHorario()
+  fullName: SistemaMatricula.Horario.ObtenerFormatoHorario()
   type: Method
   source:
     remote:
-      path: src/Profesor.cs
+      path: src/Horario.cs
       branch: feature/system
       repo: https://github.com/JalemOG/SistemaMatricula.git
-    id: MostrarDetalles
-    path: src/Profesor.cs
-    startLine: 41
+    id: ObtenerFormatoHorario
+    path: src/Horario.cs
+    startLine: 48
   assemblies:
   - SistemaMatricula
-  namespace: src
+  namespace: SistemaMatricula
   summary: >-
-    Imprime en pantalla los datos específicos del profesor.
+    Une todos los datos para devolver un texto legible.
 
-    Sobreescribe (override) el método abstracto definido en la clase Persona.
+    Demuestra que las funciones también tienen Tipos de Datos (en este caso, retorna un 'string').
   example: []
   syntax:
-    content: public override void MostrarDetalles()
-    content.vb: Public Overrides Sub MostrarDetalles()
-  overridden: src.Persona.MostrarDetalles
-  overload: src.Profesor.MostrarDetalles*
+    content: public string ObtenerFormatoHorario()
+    return:
+      type: System.String
+      description: Una cadena de texto con el formato del horario.
+    content.vb: Public Function ObtenerFormatoHorario() As String
+  overload: SistemaMatricula.Horario.ObtenerFormatoHorario*
 references:
-- uid: src
-  commentId: N:src
-  href: src.html
-  name: src
-  nameWithType: src
-  fullName: src
+- uid: SistemaMatricula
+  commentId: N:SistemaMatricula
+  href: SistemaMatricula.html
+  name: SistemaMatricula
+  nameWithType: SistemaMatricula
+  fullName: SistemaMatricula
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -213,34 +269,6 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: src.Persona
-  commentId: T:src.Persona
-  parent: src
-  href: src.Persona.html
-  name: Persona
-  nameWithType: Persona
-  fullName: src.Persona
-- uid: src.Persona.Nombre
-  commentId: P:src.Persona.Nombre
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_Nombre
-  name: Nombre
-  nameWithType: Persona.Nombre
-  fullName: src.Persona.Nombre
-- uid: src.Persona.Identificacion
-  commentId: P:src.Persona.Identificacion
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_Identificacion
-  name: Identificacion
-  nameWithType: Persona.Identificacion
-  fullName: src.Persona.Identificacion
-- uid: src.Persona.Edad
-  commentId: P:src.Persona.Edad
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_Edad
-  name: Edad
-  nameWithType: Persona.Edad
-  fullName: src.Persona.Edad
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -467,12 +495,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: src.Profesor.Especialidad*
-  commentId: Overload:src.Profesor.Especialidad
-  href: src.Profesor.html#src_Profesor_Especialidad
-  name: Especialidad
-  nameWithType: Profesor.Especialidad
-  fullName: src.Profesor.Especialidad
+- uid: SistemaMatricula.Horario.DiaSemana*
+  commentId: Overload:SistemaMatricula.Horario.DiaSemana
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_DiaSemana
+  name: DiaSemana
+  nameWithType: Horario.DiaSemana
+  fullName: SistemaMatricula.Horario.DiaSemana
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -484,32 +512,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: src.Profesor.SalarioBase*
-  commentId: Overload:src.Profesor.SalarioBase
-  href: src.Profesor.html#src_Profesor_SalarioBase
-  name: SalarioBase
-  nameWithType: Profesor.SalarioBase
-  fullName: src.Profesor.SalarioBase
-- uid: System.Double
-  commentId: T:System.Double
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.double
-  name: double
-  nameWithType: double
-  fullName: double
-  nameWithType.vb: Double
-  fullName.vb: Double
-  name.vb: Double
-- uid: src.Profesor.#ctor*
-  commentId: Overload:src.Profesor.#ctor
-  href: src.Profesor.html#src_Profesor__ctor_System_String_System_String_System_Int32_System_String_System_Double_
-  name: Profesor
-  nameWithType: Profesor.Profesor
-  fullName: src.Profesor.Profesor
-  nameWithType.vb: Profesor.New
-  fullName.vb: src.Profesor.New
-  name.vb: New
+- uid: SistemaMatricula.Horario.HoraInicio*
+  commentId: Overload:SistemaMatricula.Horario.HoraInicio
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_HoraInicio
+  name: HoraInicio
+  nameWithType: Horario.HoraInicio
+  fullName: SistemaMatricula.Horario.HoraInicio
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -521,28 +529,30 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: src.Persona.MostrarDetalles
-  commentId: M:src.Persona.MostrarDetalles
-  parent: src.Persona
-  href: src.Persona.html#src_Persona_MostrarDetalles
-  name: MostrarDetalles()
-  nameWithType: Persona.MostrarDetalles()
-  fullName: src.Persona.MostrarDetalles()
-  spec.csharp:
-  - uid: src.Persona.MostrarDetalles
-    name: MostrarDetalles
-    href: src.Persona.html#src_Persona_MostrarDetalles
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: src.Persona.MostrarDetalles
-    name: MostrarDetalles
-    href: src.Persona.html#src_Persona_MostrarDetalles
-  - name: (
-  - name: )
-- uid: src.Profesor.MostrarDetalles*
-  commentId: Overload:src.Profesor.MostrarDetalles
-  href: src.Profesor.html#src_Profesor_MostrarDetalles
-  name: MostrarDetalles
-  nameWithType: Profesor.MostrarDetalles
-  fullName: src.Profesor.MostrarDetalles
+- uid: SistemaMatricula.Horario.HoraFin*
+  commentId: Overload:SistemaMatricula.Horario.HoraFin
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_HoraFin
+  name: HoraFin
+  nameWithType: Horario.HoraFin
+  fullName: SistemaMatricula.Horario.HoraFin
+- uid: SistemaMatricula.Horario.Aula*
+  commentId: Overload:SistemaMatricula.Horario.Aula
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_Aula
+  name: Aula
+  nameWithType: Horario.Aula
+  fullName: SistemaMatricula.Horario.Aula
+- uid: SistemaMatricula.Horario.#ctor*
+  commentId: Overload:SistemaMatricula.Horario.#ctor
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario__ctor_System_String_System_Int32_System_Int32_System_String_
+  name: Horario
+  nameWithType: Horario.Horario
+  fullName: SistemaMatricula.Horario.Horario
+  nameWithType.vb: Horario.New
+  fullName.vb: SistemaMatricula.Horario.New
+  name.vb: New
+- uid: SistemaMatricula.Horario.ObtenerFormatoHorario*
+  commentId: Overload:SistemaMatricula.Horario.ObtenerFormatoHorario
+  href: SistemaMatricula.Horario.html#SistemaMatricula_Horario_ObtenerFormatoHorario
+  name: ObtenerFormatoHorario
+  nameWithType: Horario.ObtenerFormatoHorario
+  fullName: SistemaMatricula.Horario.ObtenerFormatoHorario
